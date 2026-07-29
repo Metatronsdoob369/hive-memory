@@ -4,6 +4,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-07-29 — OMC graphify refreshed
+
+- `graphify update . --force` on `open-model-contracts` after cin-gen work. Added `.graphifyignore` (drop `registry/checkpoints/` — first pass was 43k nodes of checkpoint clones).
+- Result: 12,206 nodes / 14,408 edges. Repo-local only; not wired into Hive assemble. `cin-gen-runtime` is a sibling repo if that needs its own index.
+
 ## 2026-07-29 — OMC outside layer first
 
 - Joe: hold WhiteGlove / book-pipeline / property-hydra / spectral compile expansion; put **open-model-contracts** on the outside before growing the pilot Graphify family.

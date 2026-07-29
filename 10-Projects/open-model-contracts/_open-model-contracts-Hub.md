@@ -23,6 +23,13 @@ Canonical index: `spec/domicile-governance/INDEX.md`
 
 Joe 2026-07-29: product **compile** expand (WhiteGlove/book/hydra/spectral) **held** until this outside layer is the obvious front door.
 
+### Graphify (repo-local — not Hive assemble)
+
+- **Refreshed 2026-07-29** after cin-gen work: `graphify update . --force`
+- Now **12,206 nodes / 14,408 edges / 1,461 communities** (was ~914 in April; first refresh hit 43k until `.graphifyignore` dropped `registry/checkpoints/`)
+- `spec/` is the densest useful slice (~2.2k nodes). `cin-gen-runtime` lives as a **sibling** under `NODE_OUT_Master/` — not inside this graph.
+- Still not a Hive compile root.
+
 ## Do / don’t
 
 - **Do** read `spec/domicile-governance/`, `constitution/`, `spec/contracts/v3/` before inventing agent shapes.

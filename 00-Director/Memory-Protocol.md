@@ -2,6 +2,16 @@
 
 Hive is the only hall memory. Do not invent a private `MEMORY.md` cubby elsewhere.
 
+## Layer stack (locked 2026-07-29)
+
+| Layer | Job |
+| --- | --- |
+| **OMC** (outside) | Contracts / constitution — shapes agents may use. Repo: `NODE_OUT_Master/open-model-contracts`. |
+| **Hive** (hall) | Shared state, gotchas, project hubs. This vault. |
+| **Product repos** | Code + proof — arbiter, WhiteGlove, spectral, book-pipeline, … |
+
+OMC is not another product in the arbiter compile family. Do not grow CIF/`memory-vault` inside OMC — redirect stays → Hive. Product **compile** expansion (WhiteGlove, book, hydra, spectral-into-pilot) is **on hold** until this outside layer is visible; hubs may still exist.
+
 ## Four rules
 
 1. **Auto-loaded = compact; heavy = linked.** Director and hubs stay short. Deep artifacts (ledger, HANDOFF, specs) are linked, never pasted.

@@ -4,6 +4,12 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-07-29 — OMC outside layer first
+
+- Joe: hold WhiteGlove / book-pipeline / property-hydra / spectral compile expansion; put **open-model-contracts** on the outside before growing the pilot Graphify family.
+- Added `10-Projects/open-model-contracts/_open-model-contracts-Hub.md`; roster split Outside vs Products; Memory-Protocol layer stack; Delegation “contracts before shapes.”
+- Compile roots unchanged: Hive + arbiter only. OMC compile later when editing contracts (separate from arbiter/WG family).
+
 ## 2026-07-29 — plugin surface pruned; `skillOverrides` found
 
 - **Disabled** `azure` / `aws-startup-advisor` / `data-agent-kit-starter-pack` in `~/.claude/settings.json` — no Azure, AWS, or live GCP in the stack. 53 skills, ~2,330 tok. Reversible booleans; Azure has $1,000 unusable-on-Anthropic credit, so re-enable is one flip when something gets built there.
@@ -11,7 +17,7 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - **`skillOverrides` found in the settings schema** (per-skill `off` / `name-only` / `user-invocable-only`). Largely obsoletes the ECC lane's plumbing — `name-only` on the 55 non-keepers ≈ 300 tok with zero code, no plugin disable, no commands rescue. Lane re-scoped to *measure first, build only if it still earns it*.
 - Two spec assumptions broken by the same read: the 4,207-token headline is a raw frontmatter sum (harness already caps via `skillListingBudgetFraction`/`MaxDescChars`), and `UserPromptSubmit` is already occupied by `manage.py`.
 - **Design rule banked:** a name clash is not a collision — skills collide only when contending for the same *trigger moment*. Reading them reversed 2 of 3 demotions (`security-review`, `verification-loop` are complementary; only `tdd-workflow` genuinely contends).
-- Noted: 2 xAI keys + n8n JWT plaintext in `settings.json`. Joe rotating.
+- Noted: 2 xAI keys + n8n JWT plaintext in `settings.json`. Joe: **non-valid** (dead/stale), not live secrets requiring rotation. Still bad pattern — scrub allowlist/MCP to env refs when convenient; no urgency.
 
 ## 2026-07-29 — under-surfacing counterweight (ECC lane)
 

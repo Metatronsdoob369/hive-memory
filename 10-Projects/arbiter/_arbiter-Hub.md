@@ -9,7 +9,7 @@
 - Two faces in one `LegalAdvisor`: Counsel (public) + Private Confidant / pcon (private).
 - **MVP call:** ship Private Confidant first (most tested; least stub-dependent).
 - **Open:** buyer = pro-se vs small-firm paralegal/attorney.
-- **Live risk (Joe 2026-07-29):** false silence — band silence; register lexicon as query expansion; local embedder later (consumer-side).
+- **Live risk (Joe 2026-07-29):** false silence — band silence; register lexicon as query expansion; local embedder later (consumer-side). Same costume on ECC lane: strict `min-score` never tuned = dead index wearing a green check (~990 standing bill).
 
 ## Real vs stub (short)
 

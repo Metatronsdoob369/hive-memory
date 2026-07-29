@@ -20,6 +20,10 @@ Writes always land in this vault. Never write agent notes into `.hive/`.
 
 Defects cluster in fixes-to-review-notes. Re-review after addressing feedback. Mutation-test guards. Verify before reporting status — never from memory alone.
 
+**Gotcha (2026-07-29):** check the settings schema before declaring a harness limit. Claimed "`enabledPlugins` is plugin-level only, no per-skill disable" as a *decisive finding* and designed a plugin-disable + file-copy + commands-rescue plan around it. `skillOverrides` exists — per-skill `off` / `name-only` / `user-invocable-only` — and `skillListingBudgetFraction` (~1% of window) already caps the listing. Order is **prune → configure → build**: disable unused plugins, then `name-only` the tail, then build only what survives. `name-only` on 55 ECC skills ≈ 300 tok vs ~2,415 — most of the lane's win for zero code.
+
+**Gotcha (2026-07-29):** under-surfacing is cheap in tokens and expensive in the thing you're buying. A strict threshold never tuned → dead index + standing bill, silence that looks like success. Strict is right as a start; only safe if tuning actually happens. Same class as false silence. Spec: `arbiterOS-legal-confidant-/docs/superpowers/specs/2026-07-29-ecc-technique-lane-design.md`.
+
 ## Parallel sessions
 
 Pull before write. Milestone edits on hubs (CURRENT STATE bullets). Prefer one writer per hub file. Roster stays one line per project.

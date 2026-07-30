@@ -4,6 +4,13 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-07-30 — Hyperagent account suspended (same day as bond-hunt close)
+
+- Joe closed the loop on bond-hunt; Hyperagent Opus replied “There it is”; account then locked.
+- UI: **Your account has been suspended** for ToS; appeal `support@hyperagent.com`. Login `?error=not_allowed`. Request id `4953287d-940b-4867-9de6-cf9ff1ced5ad` (~2026-07-30 18:38 UTC).
+- **Not** Anthropic / not a wipe of local work. Hive, arbiter, intelligence-vault, OMC still on disk. Cursor session still live.
+- Action: appeal Hyperagent with screenshot + request id; do not paste session cookies into chats.
+
 ## 2026-07-29 — OMC graphify refreshed
 
 - `graphify update . --force` on `open-model-contracts` after cin-gen work. Added `.graphifyignore` (drop `registry/checkpoints/` — first pass was 43k nodes of checkpoint clones).

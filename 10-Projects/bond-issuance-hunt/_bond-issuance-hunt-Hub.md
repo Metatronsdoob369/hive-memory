@@ -4,6 +4,7 @@
 
 ## Where we are
 
+- **2026-07-30:** Joe closed the bond-hunt loop (details in HANDOFF / ledger — link, don’t paste). Same day: Hyperagent account suspended (`support@hyperagent.com`); local hunt artifacts untouched.
 - Stance: build **search efficiency**; log leads/dead ends honestly; no Hardy Boys framing.
 - Operator hypothesis (open): people as issuance basis / BC as stock-receipt framing — study only, not sealed.
 - Hunt harness live: pack / resolve / auction / issuer-probe / posture.

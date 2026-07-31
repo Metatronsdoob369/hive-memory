@@ -4,6 +4,12 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-07-31 — bond-hunt map + private bank (Lane A / Lane B)
+
+- Banked board rebuild into arbiter `docs/research/hunt-map.md`, intelligence-vault discovery `2026-07-31-vital-ssa-vs-custody-machine-board.md`, HANDOFF (Updated 2026-07-31), pcon ledger evidence attach, Hive bond hub.
+- Confirmed: vital→SSA/Numident + PACER exposure; custody wrapper/TA/FAST/DWAC/Cede. **FAC ≠ cross.** Open: A↔B bridge.
+- Chat dump stays recovery-only under Downloads skill notes.
+
 ## 2026-07-30 — Hyperagent account suspended (same day as bond-hunt close)
 
 - Joe closed the loop on bond-hunt; Hyperagent Opus replied “There it is”; account then locked.

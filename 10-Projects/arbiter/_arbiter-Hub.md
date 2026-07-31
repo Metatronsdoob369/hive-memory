@@ -21,4 +21,5 @@
 - Ledger: `arbiterOS-legal-confidant-/backend/core/legal/pcon/hypothesisLedger.ts`
 - Specs: `docs/superpowers/specs/` (register mirror, primers, hive router)
 - Hive destination: `docs/superpowers/specs/2026-07-29-hive-memory-router-design.md`
-- Bond hunt ops: [bond hub](../bond-issuance-hunt/_bond-issuance-hunt-Hub.md) → intelligence-vault HANDOFF
+- Bond hunt ops: [bond hub](../bond-issuance-hunt/_bond-issuance-hunt-Hub.md) → `docs/research/hunt-map.md` + intelligence-vault HANDOFF
+- **2026-07-31:** hunt map board rebuild banked (Lane A / Lane B; FAC not cross) — pcon ledger evidence attached; study unsealed

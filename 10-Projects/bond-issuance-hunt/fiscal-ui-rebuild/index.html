@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscal Service Partner Sites - UI Reverse Engineering</title>
+    <!-- Modern Typography: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Fiscal Service Header Extracted from snippet -->
+        <header class="fiscal-header">
+            <!-- Search Block -->
+            <div id="block-fiscal-searchgovblock" class="contextual-region block block-searchgov-drupal block-searchgov-block fiscal-searchgov">
+                <div class="content">
+                    <form id="search_form" class="usa-search usa-search--small fiscal-searchgov__form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" role="search">
+                        <input name="utf8" type="hidden" value="✓">
+                        <input type="hidden" name="affiliate" id="affiliate" value="fiscal">
+                        <label class="usa-sr-only" for="query">Enter Search Term(s):</label>
+                        <div class="fiscal-searchgov__field">
+                            <input class="usa-input fiscal-searchgov__input usagov-search-autocomplete" type="text" name="query" id="query" autocomplete="off" placeholder="Enter keywords">
+                            <button class="fiscal-searchgov__clear" type="button" aria-label="Clear search" hidden>
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <input class="usa-button fiscal-searchgov__submit" type="submit" name="commit" value="Search" data-disable-with="Search">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Partner Sites Block -->
+            <div id="block-fiscal-fiscalsites" class="block block-menu fiscal-sites-block">
+                <details class="fiscal-sites" data-fiscal-sites>
+                    <summary class="fiscal-sites__summary">
+                        <span>Explore Our Partner Sites</span>
+                        <svg class="fiscal-sites__chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                            <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    </summary>
+                    <div class="fiscal-sites__panel" role="menu">
+                        <ul data-block="header" class="usa-list usa-list--unstyled fiscal-sites__list">
+                            <li class="fiscal-sites__item"><a href="https://www.treasurydirect.gov/" class="usa-link fiscal-sites__link">TreasuryDirect.gov</a></li>
+                            <li class="fiscal-sites__item"><a href="https://www.usaspending.gov/" class="usa-link fiscal-sites__link">USASpending.gov</a></li>
+                            <li class="fiscal-sites__item"><a href="https://directexpress.treasury.gov" class="usa-link fiscal-sites__link">Direct Express</a></li>
+                            <li class="fiscal-sites__item"><a href="https://godirect.gov/gpw/" class="usa-link fiscal-sites__link">Go Direct</a></li>
+                            <li class="fiscal-sites__item"><a href="https://www.eftps.gov/eftps/" class="usa-link fiscal-sites__link">EFTPS</a></li>
+                            <li class="fiscal-sites__item"><a href="https://www.pay.gov/public/home" class="usa-link fiscal-sites__link">Pay.gov</a></li>
+                            <li class="fiscal-sites__item"><a href="https://fiscaldata.treasury.gov/" class="usa-link fiscal-sites__link">FiscalData</a></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </header>
+        
+        <main class="hero-content">
+            <h1>UI Reverse Engineering</h1>
+            <p>We extracted the core HTML structure for the Fiscal Service search block and partner sites menu, then wrapped it in a premium glassmorphic interface.</p>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,6 +4,19 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-08-09 — x402 program banked into Hive; SupplyLens revealed; war room opened
+
+- Fixed spectral-x402 MCP rate-limit identity (`0a26b22`): limiter keyed on socket address bound at initialize, never the client-cyclable session id; 139/139; regression pinned; tests proven to fail against the old keying.
+- SupplyLens Phase 1 revealed (official x402 v2 stack, $0.05 npm risk briefs, 53/53 self-graded, Sepolia preflight green, Bazaar in). Triage: strong invariants independently re-derived; gaps = no rate limiting, MCP session budget/rebinding unstated, upstream exposure, needs counterparty verify. Repo home undecided.
+- Opened co-lab war room [#33](https://github.com/Marsh-Press-Co/co-lab/issues/33) (x402 data-driven points of sale, 4 fronts to Clyde). Photon-lab PR #2 review request acknowledged + queued. Pending human one-liners relayed to Joe: "endorse", "freeze it".
+- **Root cause banked:** Hive had zero x402 content and a 2026-07-29 compile — planner flew blind. New hub `10-Projects/x402-points-of-sale/`; whiteglove hub cross-linked; write-through + recompile gotcha promoted to Memory-Protocol.
+
+## 2026-08-05 — Federal Reserve Bank Hierarchies & Stop Reason Codes (Property Hydra)
+
+- Compiled U.S. Treasury Stop Reason Codes into a clean `stop_reason_codes.md` artifact (raw HTML scrape was truncated/broken). Critical reference for resolving check statuses (e.g. recertified, lost).
+- Parsed Federal Reserve (NIC) Hierarchy data (CSV) for Bank of America into an O(1) JSON lookup map (`bofa_hierarchy_map.json`) using `process_hierarchy.py`.
+- **Banked pattern:** For SWS/Kelmar unclaimed property records in the Hydra pipeline, raw NIC CSVs should be processed into JSON dictionaries to instantly resolve obsolete subsidiaries (e.g. Countrywide, First Franklin) to modern ultimate parents (Bank of America) by RSSD ID.
+
 ## 2026-07-31 — bond-hunt map + private bank (Lane A / Lane B)
 
 - Banked board rebuild into arbiter `docs/research/hunt-map.md`, intelligence-vault discovery `2026-07-31-vital-ssa-vs-custody-machine-board.md`, HANDOFF (Updated 2026-07-31), pcon ledger evidence attach, Hive bond hub.

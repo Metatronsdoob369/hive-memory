@@ -23,3 +23,4 @@
 - SupplyLens docs (until repo home lands): `~/Downloads/2026-08-09-supplylens-design.md`, `local-conformance.md`, `README.md`
 - Sibling hub: [whiteglove](../whiteglove/_whiteglove-Hub.md)
 - **Open (Joe, 2026-08-09):** SupplyLens repo home; co-lab one-liners "endorse" (governance amendment) + "freeze it" (photon-lab exp-001) still pending.
+- **ChatGPT exiting the project (2026-08-09):** overlap being removed. Exit-interview instrument: [CHATGPT-EXIT-REQUEST.md](CHATGPT-EXIT-REQUEST.md) — Joe hands it over; answers return as `SUPPLYLENS_HANDOFF_ANSWERS.md` and get banked here. Repo-home final call waits on answers §2 (Bazaar/npm URLs that would break on move) + Joe's ownership boundary (which org). Standing recommendation: standalone repo in an org from day one, not inside Whiteglove, not personal.

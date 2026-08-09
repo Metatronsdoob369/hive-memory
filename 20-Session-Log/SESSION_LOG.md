@@ -4,6 +4,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-08-09 — ChatGPT exit from x402 opened; SupplyLens repo-home framed
+
+- ChatGPT is being moved out of the x402/SupplyLens project (overlap removal, Joe's call). Wrote [CHATGPT-EXIT-REQUEST.md](../10-Projects/x402-points-of-sale/CHATGPT-EXIT-REQUEST.md) — 30-item exit interview (inventory/provenance, external registrations, secrets audit with rotate-on-handoff, decision rationale, conformance reproduction, gaps, runbook, commitments). Rules: no secret values (locations only), UNKNOWN over guessing. Answers to return as `SUPPLYLENS_HANDOFF_ANSWERS.md` and be banked in the x402 folder.
+- Repo-home call staged: recommend standalone repo in an org from day one (payment products accrue external references — Bazaar/npm/facilitator URLs — that make later moves expensive; spectral-x402-inside-Whiteglove is the cautionary sibling). Final decision gated on exit answers §2 + one Joe boundary: which org owns it (Joe-sovereign new org vs Marsh-Press-Co).
+
 ## 2026-08-09 — graph-architecture skill specified; "graph knowledge" disambiguated
 
 - Chewed Joe's NotebookLM compiler persona (evidence labels DS/SS/IN/JH/UG + confidence standard = the portable asset; persona = one doorway). Disambiguated "graph knowledge": (1) graph-as-computation (spectral/Eve — codebases, already strong), (2) graph-as-agent-architecture (design judgment — the gap), (3) graph-as-knowledge-representation (Hive/Graphify — infrastructure). Arrows point at (2); skill = understanding, references (1) as a tool, harness enforces at runtime.

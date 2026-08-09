@@ -5,7 +5,7 @@
 ## Where we are (2026-08-09)
 
 - **spectral-x402** (inside `Metatronsdoob369/Whiteglove-`, `spectral-x402/`): hand-rolled seller-side kernel. Mount kernel merged (PR #35); settlement gate reviewed (`feat/x402-real-settlement`); 139/139 green. Sealed content-addressed packs, digest-verified manifests, SQLite ledger, stub facilitator loopback-only. Packs are untracked local artifacts — fresh worktrees must copy `spectral-x402/packs/` from the main checkout or 107 tests fail on ENOENT.
-- **SupplyLens** (Phase 1, built 2026-08-09 outside Hive visibility; repo home TBD — org-from-day-one pending Joe): official x402 v2 stack (`@x402/core|hono|evm|extensions` 2.21.0), Hono, node:sqlite. Product: USD 0.05/call npm package risk brief for coding agents. 53/53 local conformance (self-graded, counterparty run pending); facilitator preflight green on Base Sepolia `eip155:84532`; Bazaar declaration in. Gated finish: live Sepolia settlement (operator recipient + funded payer test wallet). Mainnet is startup-rejected.
+- **SupplyLens** (Phase 1, built 2026-08-09; **home: `Marsh-Press-Co/supplylens`**, org-from-day-one on Joe's word 2026-08-09; design docs on `design-docs` branch, `main` left unborn for the code push from Joe's build env): official x402 v2 stack (`@x402/core|hono|evm|extensions` 2.21.0), Hono, node:sqlite. Product: USD 0.05/call npm package risk brief for coding agents. 53/53 local conformance (self-graded, Bonnie's counterparty run fires when code lands); facilitator preflight green on Base Sepolia `eip155:84532`; Bazaar declaration in. Build tracking: co-lab #34; roster PR co-lab #35 (needs-go). Gated finish: live Sepolia settlement (operator recipient + funded payer test wallet). Mainnet is startup-rejected.
 - **Relationship:** siblings, not successor/corpse. Spectral = sealed-pack substrate + review scar tissue; SupplyLens = official rail + product wedge + Bazaar discovery answer.
 - **Doctrine (SupplyLens, keep verbatim):** only replay-safe, side-effect-free adapters mount; **payment is not authorization**.
 
@@ -22,4 +22,4 @@
 - Reviews: Whiteglove repo `docs/superpowers/reviews/` (final 712cfda..3a10fa8; fixwave re-review; settlement-gate + re-review 2026-08-07)
 - SupplyLens docs (until repo home lands): `~/Downloads/2026-08-09-supplylens-design.md`, `local-conformance.md`, `README.md`
 - Sibling hub: [whiteglove](../whiteglove/_whiteglove-Hub.md)
-- **Open (Joe, 2026-08-09):** SupplyLens repo home; co-lab one-liners "endorse" (governance amendment) + "freeze it" (photon-lab exp-001) still pending.
+- **Open (2026-08-09 evening):** SupplyLens code push to `main` (from Joe's build env — one `git push`); roster PR co-lab #35 awaits a human go; live Sepolia gates await Joe's recipient + funded payer test wallet. Resolved same day: "endorse" (relayed, ratification PR photon-lab #4), "freeze it" (Marsh's word), repo home ("org").

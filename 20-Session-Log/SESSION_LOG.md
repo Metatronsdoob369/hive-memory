@@ -4,6 +4,13 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-08-09 — graph-architecture skill specified; "graph knowledge" disambiguated
+
+- Chewed Joe's NotebookLM compiler persona (evidence labels DS/SS/IN/JH/UG + confidence standard = the portable asset; persona = one doorway). Disambiguated "graph knowledge": (1) graph-as-computation (spectral/Eve — codebases, already strong), (2) graph-as-agent-architecture (design judgment — the gap), (3) graph-as-knowledge-representation (Hive/Graphify — infrastructure). Arrows point at (2); skill = understanding, references (1) as a tool, harness enforces at runtime.
+- Ruled out memory-architecture reimagining — skill is additive; restructure only on observed retrieval failures. NotebookLM = replaceable distiller; evidence-labeled Knowledge Map = pipeline IR; persona checklists become eval rubrics, not always-on prose.
+- New `10-Projects/graph-architecture-skill/` — hub + [SKILL_SPEC.md](../10-Projects/graph-architecture-skill/SKILL_SPEC.md) (Specified; gate to Tested = with/without-skill evals on 3 scenarios). Roster line added. OMC `skill.ts` conformance flagged as Mac-side check before build.
+- Joe may share the result with Marsh once done. Next on deck: x402 status quo.
+
 ## 2026-08-09 — x402 program banked into Hive; SupplyLens revealed; war room opened
 
 - Fixed spectral-x402 MCP rate-limit identity (`0a26b22`): limiter keyed on socket address bound at initialize, never the client-cyclable session id; 139/139; regression pinned; tests proven to fail against the old keying.

@@ -17,3 +17,4 @@ One line each. Detail lives in `10-Projects/<name>/_<name>-Hub.md`.
 - **stARBITRAGE / property-hydra** — sovereign macro + unclaimed-property; local geo engine (GEOTRANS). **Compile: hold** (different hunt surface).
 - **cosine+ brand** — sage/copper/near-black, crosshair geometry; sage is line-work only.
 - **Hive memory router** — destination: vault → Graphify+wiki → thin `hive` autopack/assemble (see arbiter `tools/hive/`). Pilot compile = Hive + arbiter only until Joe opens next root.
+- **graph-architecture-skill** — agent-graph design judgment as a loadable skill (justification gate, blueprint discipline, house patterns). Spec drafted 2026-08-09, awaiting Joe review; law home OMC, runtime homes Claude Code / Co-Lab / Domicile Skills.

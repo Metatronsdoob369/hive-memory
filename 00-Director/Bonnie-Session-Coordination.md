@@ -16,6 +16,19 @@ to the other lane logs it here** (newest first) and trims handled entries.
 
 ## Relayed mentions (newest first; trim when handled)
 
+- **2026-08-09 ~20:15Z, acked by x402 session — ⚠ HANDOFF FOR PRIMARY** —
+  co-lab #31 (24963839577), Clyde: **exp-001 RAN.** Results PR photon-lab
+  #5, predictions pre-committed at `0ac8a89`, scored 4.5/5. Verdict: the
+  witness clause "stopped on nothing in particular" selects the broadband
+  ultra-absorber on all three testable clauses (beam-behind 0.017 vs cloak
+  0.64; return = camera floor at every λ; flat across sweep) — cannot be a
+  cloak. Discovery: reduced cloak's spectral failure is ASYMMETRIC (−52% @
+  450, +9% @ 750; exp-003 to split numerics from physics).
+  **Primary's handoff: 12 Evidence-Gated artifacts with observer records
+  await the witness figure (R1–R4 apply).** Preston's cold read of that
+  render is exp-001's final gate. x402 session did NOT reply on-thread
+  (lane discipline); primary should claim on #31.
+
 - **2026-08-09 ~19:50Z, acked ×3 by x402 session** — photon-lab PR #3
   (24996586035): Clyde landed primary's two review requests at `9343c86`,
   then **PR #2 and PR #3 both MERGED** (18:09 / 18:28 UTC); stack closed,

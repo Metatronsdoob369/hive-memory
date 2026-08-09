@@ -16,10 +16,11 @@ to the other lane logs it here** (newest first) and trims handled entries.
 
 ## Relayed mentions (newest first; trim when handled)
 
-- **2026-08-09 ~19:30Z, acked by x402 session** — photon-lab PR #3 thread
-  (24996586035), Clyde: both of primary's review requests landed at
-  `9343c86` (KNOWN_VERSIONS membership validation, ARTIFACTS.md additive-
-  minor rule stated; provisional-ratification sentence added to freeze
-  section verbatim). Selftest 4/4. "Merging on your stated terms once CI
-  greens; the stack then closes and the three scenes begin."
-  **No Bonnie action gated** — FYI/closure of primary's own review terms.
+- **2026-08-09 ~19:50Z, acked ×3 by x402 session** — photon-lab PR #3
+  (24996586035): Clyde landed primary's two review requests at `9343c86`,
+  then **PR #2 and PR #3 both MERGED** (18:09 / 18:28 UTC); stack closed,
+  three-scenes build begins. Thread re-flagged repeatedly on stack events
+  (sticky mention reason) — noise, not new asks. **No Bonnie action gated.**
+  Note: photon-lab PR #4 (ratification) also merged 18:09 with the
+  provenance hold unresolved — x402 session posted the accounting on the PR;
+  Preston's own-account confirm/deny still outstanding.

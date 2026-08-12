@@ -8,13 +8,13 @@
 
 ## Status
 
-- NOT STARTED, by design. Permitted before locks: locking decisions here; creating an empty vessel repo containing only this constitution. NOT permitted: collecting exports, normalizing, ingesting, or building lens tooling against real data.
+- Vessel standing EMPTY at `/Users/joewales/hive-corpus` (local git, NO remote — by lock #1). Decisions 1–3 LOCKED; 4–6 OPEN. Ingestion remains gated: no collecting exports, no normalizing, no lens tooling against real data until 4–6 lock and Joe says go (pilot #6 governs first data).
 
 ## Decisions (LOCKED = Joe's dated note beside it)
 
-1. **Vessel** — separate repo (`hive-corpus`), append-only, content-addressed. Two tiers: sealed originals never leave the machine unencrypted; shareable layer carries reversibly-redacted copies (secrets flagged + vaulted, never deleted). — OPEN
-2. **Envelope = facts of capture only** — source model, export format, date span, raw hash. No topic tags, no importance field, no required project mapping at ingestion; those are lens outputs later, suggested never stamped. — OPEN
-3. **Lossless normalization** — one canonical transcript format (turns, timestamps, model), hash-verified, reversible. Format is the only permitted transformation at the door; content untouched. — OPEN
+1. **Vessel** — **LOCKED (Joe, 2026-08-12):** one dedicated repo `/Users/joewales/hive-corpus`, append-only, per-file hashes. **Local-only — no remote, never pushed — until a reversible redaction layer exists** (secrets flagged + vaulted, never deleted). Simplified from the earlier two-tier sketch per Joe's one-repo picture.
+2. **Envelope = facts of capture only** — **LOCKED (Joe, 2026-08-12):** organization is provider + chronology, nothing else — one folder per model (claude/, gpt/, grok/, gemini/, new providers get new folders), files in date order. Frontmatter: source model, export format, date span, raw hash. No topic tags, no importance field, no project mapping at ingestion; those are lens outputs later, suggested never stamped.
+3. **Lossless normalization** — **LOCKED (Joe, 2026-08-12):** records land whole and in the order lived — one canonical transcript format (turns, timestamps, model), hash-verified, reversible; format is the only permitted transformation at the door, content untouched, nothing summarized or reordered.
 4. **Lenses, not distillates** — readings are on-demand generated views citing raw (session + turn); disposable, regenerable, never authoritative, never a filter on what exists. — OPEN
 5. **Merit loop** — lens findings land in a candidates file with citations; promotion into Director/hubs/rules requires Joe's dated note. No exceptions, no auto-promotion. — OPEN
 6. **Pilot = recall test** — Joe names half-remembered moments; tooling must find them and descend to the raw exchange. Findability is the bar (preserves unknown-unknowns), not curation quality. — OPEN

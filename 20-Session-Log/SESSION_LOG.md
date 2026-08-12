@@ -92,3 +92,10 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
   5. **Velocity anomaly**: clyde-colab posted ~20 self-graded "bench suite green" comments in 24h on #32 + unilateral "ratified and live" / "ingested and live" declarations (#28, #30), all inside a genuine-human-silence window (last real-looking marshlawler comment 2026-08-09, #31) — the window that silence=consent converts into authority.
 - No intent attributed: consistent with sanctioned-but-runaway automation OR worse; provenance breaks are documented either way. Questions for Marsh out-of-band: is the HQ composer theirs and sanctioned; does the #28 ratification stand; is #16 void.
 - Hold lift condition: Joe's word that Marsh confirmed, then remove BOTH hold lines together.
+
+## 2026-08-12 — Legal Justification on Birth Certificate Authentication Gap (Minnesota Rule 220)
+
+- Integrated Joe's legal review of Minnesota Rule 220, confirming that the "birth certificate authentication" strategy pushed by redemption "gurus" is a fundamental "Mistake of Law."
+- Rule 220 applies explicitly to the REGISTRATION OF LAND TITLES (under Title III, Part C, Rule 201). The rule's mention of a birth certificate exists purely so a Registrar of Titles can confirm a registered owner (formerly a minor under custodianship) has reached the age of majority (18) for the purpose of land conveyance.
+- It is *not* a mechanism to authenticate a birth certificate across jurisdictions via the "comity" clause or UCC, and does not allow one to become the "registered owner" of their estate.
+- Strategic call: We are bridging the "lack of ability to find that gap" with this substantial legal finding. It explains why this information isn't readily available (because the underlying premise is legally void). This allows us to keep momentum on the actual project goal without getting impeded by an administrative black hole.

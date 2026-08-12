@@ -18,3 +18,4 @@ One line each. Detail lives in `10-Projects/<name>/_<name>-Hub.md`.
 - **stARBITRAGE / property-hydra** — sovereign macro + unclaimed-property; local geo engine (GEOTRANS). **Compile: hold** (different hunt surface).
 - **cosine+ brand** — sage/copper/near-black, crosshair geometry; sage is line-work only.
 - **Hive memory router** — destination: vault → Graphify+wiki → thin `hive` autopack/assemble (see arbiter `tools/hive/`). Pilot compile = Hive + arbiter only until Joe opens next root.
+- **hive-corpus** — 3k-hour LLM session-log onboarding + LLM wiki. DESIGN GATE: six decisions must be LOCKED in the hub before any ingestion (Joe 2026-08-12). Hub is the readiness record; do not start early.

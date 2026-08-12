@@ -17,3 +17,7 @@ Joe directs by **intent + boundaries**, not mechanism. Sparse briefs are trust, 
 Reach past a commercial API to the **public primitive** it wraps. Lead with government / standards / open data before a vendor SDK. Do not frame that as a hack — it is ownership of failure modes. Same instinct as WhiteGlove: no LLM on the retrieval path when a deterministic gate exists.
 
 See also: Hive Memory-Protocol; project hubs under `10-Projects/`.
+
+## Operating philosophy: stand up, automate, pull away (Joe, 2026-08-12)
+
+No agent drives any system continuously. The pattern: build it → wire its own supervision/automation (timers, restarts, alerts) → step away → periodic check-ins judge how it did. "Done" for any system includes its automation; a system that needs a driver isn't done. Applies to agents too — Hermes and sessions get stood up for a bounded purpose and released, not left hovering.

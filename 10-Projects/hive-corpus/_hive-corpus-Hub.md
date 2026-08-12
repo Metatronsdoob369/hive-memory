@@ -27,9 +27,9 @@
 
 ## Design note (2026-08-12, Joe's idea — pends locks 4–6): book-pipeline as the derived-text stage
 
-- Attach book-pipeline's deterministic core as an on-contact ingestion stage. Two-class rule keeps it constitutional:
-  - **Joe's words** (chats, notes): lossless forever per lock #3 — markdown may be emitted BESIDE, never instead.
-  - **Third-party sources** (notebook PDFs/docs, books, papers — reproducible, not authored by Joe): derived markdown + raw hash + bibliographic pointer REPLACES the bulk; original to cold storage or left where it lives. ~95–99% size reduction where the size actually is.
+- Attach book-pipeline's deterministic core as an on-contact ingestion stage. Two-class rule keeps it constitutional — the line is "what Joe brought in vs. what happened there" (Joe, 2026-08-12):
+  - **Preserve whole:** everything discussed, built, decided, noted, or Studio'd — chats, notes, reports, infographics, audio overviews/podcasts. Binary work product keeps native bytes + hash (audio/images don't markdown); text may get markdown BESIDE, never instead.
+  - **Vaporize:** imported source documents only (PDFs/docs/books/papers uploaded as notebook sources — reproducible, not authored by Joe): derived markdown + raw hash + bibliographic pointer replaces the bulk; a PDF riding along inside an export is still a source. ~95–99% size reduction where the size actually is.
 - Verify at gate-open (not assumed): PDF→markdown lives in book-pipeline's deterministic half; the credit-blocked DNA stage should be irrelevant here.
 
 ## Links (do not copy)

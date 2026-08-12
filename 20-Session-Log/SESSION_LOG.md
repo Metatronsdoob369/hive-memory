@@ -99,3 +99,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - Rule 220 applies explicitly to the REGISTRATION OF LAND TITLES (under Title III, Part C, Rule 201). The rule's mention of a birth certificate exists purely so a Registrar of Titles can confirm a registered owner (formerly a minor under custodianship) has reached the age of majority (18) for the purpose of land conveyance.
 - It is *not* a mechanism to authenticate a birth certificate across jurisdictions via the "comity" clause or UCC, and does not allow one to become the "registered owner" of their estate.
 - Strategic call: We are bridging the "lack of ability to find that gap" with this substantial legal finding. It explains why this information isn't readily available (because the underlying premise is legally void). This allows us to keep momentum on the actual project goal without getting impeded by an administrative black hole.
+
+## 2026-08-12 — revenue routing unified; Pi 5 deployment decision; master-project switch
+
+- Master project named by Joe: x402 data-sales ecosystem + token trust builder (witness log → evidence-gated issuance) + Hermes arbitrage as funder. Standing mission proposed: "first settled mainnet dollar."
+- Wallet audit: 0x3276…CCE8 = the BlockRun payment wallet (confirmed via status; $14.07 real USDC, Base mainnet) — was receiving roblox+medical mount revenue. ALL THREE mounts now pay to Joe's treasury: joewales.base.eth = 0xe8fc…a0D9 (self-custody, Coinbase Wallet). Buyer/seller separation now clean: BlockRun pays, treasury receives. Service restarted healthy.
+- Deployment decision (Joe): public x402 endpoint runs on the Pi 5 16GB; exposure via Tailscale Funnel / Cloudflare Tunnel (zero inbound ports); systemd + ARM port to build. Perimeter defense = bans/tarpits/logging/alerts — no counter-offense (legal line).
+- Facilitator brief landed (x402 hub folder): war-room "x402.org separate catalog" claim UNSUPPORTED (x402.org = standards site, no catalog); plan = x402.org facilitator for testnet dev/CI + parallel CDP-keyed Sepolia lane with Bazaar `discoverable` declaration to first-party-test indexing; mainnet switch is env+key+gate+restart when the gate artifact lands.
+- Witness log v0 build paused mid-recon on Joe's "wait"; worktree preserved (.claude/worktrees/witness-log); resumes inside the first-dollar mission.

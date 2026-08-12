@@ -1,23 +1,27 @@
 # Hive Corpus — CURRENT STATE (design gate, not yet building)
 
-**Thesis:** onboard ~3,000 hours of LLM session logs (Claude, Grok, GPT, Gemini, …) plus the cross-session "LLM wiki" — but structure is a hard precondition (Joe, 2026-08-12): **nothing is ingested until the six decisions below are locked.** This hub is the readiness gate.
+**Thesis:** onboard ~3,000 hours of LLM session logs (Claude, Grok, GPT, Gemini, …) plus a cross-session generated wiki. This is NOT project data — it is Joe's brain-record across a period of personal upheaval and rebuilding; the value includes micro-decisions he won't remember and questions he doesn't yet know to ask. Structure precedes onboarding (Joe, 2026-08-12); nothing is ingested until the decisions below are LOCKED.
+
+## Constitution (Joe, 2026-08-12 — supersedes the earlier "distillation" design)
+
+**Preservation-neutral.** Nothing discarded; nothing ranked at ingestion; no pre-baked rule decides what of Joe's conversation, style, or history is "important." Agents may generate readings; **only Joe promotes anything from corpus into working memory** — there is no write path from corpus to Director/hubs/rules except through Joe's dated note (token-gate shape: agents propose, Joe ratifies). Merit determination on his own past is his act alone.
 
 ## Status
 
-- NOT STARTED, by design. Do not begin ingestion, normalization, or export-collection from any session archive until Joe marks each decision LOCKED here.
-- What exists today: Graphify graph+wiki compiled from vault docs only (`layers: graph+wiki true, spectral false`). The envisioned LLM wiki (cross-session synthesis) is a DIFFERENT artifact — see decision 4.
+- NOT STARTED, by design. Permitted before locks: locking decisions here; creating an empty vessel repo containing only this constitution. NOT permitted: collecting exports, normalizing, ingesting, or building lens tooling against real data.
 
-## The six decisions (LOCKED = Joe's dated note beside it)
+## Decisions (LOCKED = Joe's dated note beside it)
 
-1. **Layer separation** — raw corpus lives outside the working vault (sibling repo `hive-corpus` preferred over an in-repo `30-Corpus/`; 3k hours must not ride in the brain's git clone). Brain links corpus; never the reverse. — OPEN
-2. **Canonical session schema** — frontmatter per session: source model, date, format-of-origin, project mapping, hash of raw. Raw immutable + content-addressed; derived files point at raw. — OPEN
-3. **Distillation over dumping** — retrieval compiles per-session distillates (decisions, gotchas, artifacts, links) in SESSION_LOG shape; raw transcripts never enter autopack/assemble directly. — OPEN
-4. **LLM wiki = generated artifact** — synthesis pages derived from corpus+vault, regenerated never hand-edited (manifests discipline; drift = regenerate). — OPEN
-5. **Door gate** — secrets sweep + provenance stamp on every incoming file, refuse-don't-repair. — OPEN
-6. **Pilot before mass onboarding** — one bounded slice (e.g. 30 days of Claude sessions), retrieval-value criteria written BEFORE the pilot runs; 3k hours move only after the pilot passes. — OPEN
+1. **Vessel** — separate repo (`hive-corpus`), append-only, content-addressed. Two tiers: sealed originals never leave the machine unencrypted; shareable layer carries reversibly-redacted copies (secrets flagged + vaulted, never deleted). — OPEN
+2. **Envelope = facts of capture only** — source model, export format, date span, raw hash. No topic tags, no importance field, no required project mapping at ingestion; those are lens outputs later, suggested never stamped. — OPEN
+3. **Lossless normalization** — one canonical transcript format (turns, timestamps, model), hash-verified, reversible. Format is the only permitted transformation at the door; content untouched. — OPEN
+4. **Lenses, not distillates** — readings are on-demand generated views citing raw (session + turn); disposable, regenerable, never authoritative, never a filter on what exists. — OPEN
+5. **Merit loop** — lens findings land in a candidates file with citations; promotion into Director/hubs/rules requires Joe's dated note. No exceptions, no auto-promotion. — OPEN
+6. **Pilot = recall test** — Joe names half-remembered moments; tooling must find them and descend to the raw exchange. Findability is the bar (preserves unknown-unknowns), not curation quality. — OPEN
 
 ## Links (do not copy)
 
-- Vault rules: [Memory-Protocol](../../00-Director/Memory-Protocol.md) (compact-vs-linked, no twin notes, compile visibility)
-- Pattern sources: sealed-pack/provenance discipline in [x402 hub](../x402-points-of-sale/_x402-points-of-sale-Hub.md); evidence-gate pattern in [hermes-spectral hub](../hermes-spectral/_hermes-spectral-Hub.md) (token gate)
+- Vault rules: [Memory-Protocol](../../00-Director/Memory-Protocol.md)
+- Gate pattern precedent: [hermes-spectral hub](../hermes-spectral/_hermes-spectral-Hub.md) token gate (propose/ratify, criteria before temptation)
+- Provenance/immutability pattern: [x402 hub](../x402-points-of-sale/_x402-points-of-sale-Hub.md) sealed packs
 - Router/compile: `arbiterOS-legal-confidant-/tools/hive`

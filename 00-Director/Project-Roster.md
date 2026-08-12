@@ -14,6 +14,7 @@ One line each. Detail lives in `10-Projects/<name>/_<name>-Hub.md`.
 - **bond-issuance-hunt** — hunt ops + identifier tooling; hub links intelligence-vault HANDOFF + arbiter ledger. **Same pilot family as arbiter.**
 - **book-pipeline** — owned books → artifacts/lexicon/skills for Private Confidant orbit; deterministic core real, DNA stage credit-blocked. Hub TBD; **compile: hold**.
 - **kft-payroll-demo** — Co-Lab trucking payroll demo; live, multi-driver keystone shipped.
+- **hermes-spectral** — Hermes as financial-intel substrate on x402 rails; residuals stay perks ("bartender and the booze"). Handoff hub is the executing brief; vision PDF archived beside it. Rails + scar tissue live in x402-points-of-sale hub — cross-link, never copy.
 - **stARBITRAGE / property-hydra** — sovereign macro + unclaimed-property; local geo engine (GEOTRANS). **Compile: hold** (different hunt surface).
 - **cosine+ brand** — sage/copper/near-black, crosshair geometry; sage is line-work only.
 - **Hive memory router** — destination: vault → Graphify+wiki → thin `hive` autopack/assemble (see arbiter `tools/hive/`). Pilot compile = Hive + arbiter only until Joe opens next root.

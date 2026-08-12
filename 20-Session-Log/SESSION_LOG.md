@@ -66,3 +66,29 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - Locked destination design: vault → Graphify+wiki → thin `hive` router (autopack/assemble); spectral later.
 - Scaffolded `~/Hive` locally (Director, hubs, redirects). Arbiter+bond = one pilot family.
 - Next: `tools/hive` compile+router in arbiter; Gate 2 push of `hive-memory` when Joe greenlights.
+
+## 2026-08-11 — Hermes-Spectral: vision → hub → Mission 1 built
+
+- Joe's Grok vision PDF (Hermes as financial-intel substrate on x402 rails; residuals as "bartender and the booze" perks) converted to an executing hub: `10-Projects/hermes-spectral/` — thesis, 4 boundaries (incl. key separation the PDF missed: seller kernel key-less, wallet pays, never one process), exists-map, 5 missions with done-criteria. Timelines stripped per Joe. Vision PDF archived beside it.
+- Mission 1 executed same day in a worktree: `cut-fintel-pack.ts` seals the paper arena's own record (16 tiles: 12 trades, 3 strategy summaries, 1 snapshot; deterministic rebuild verified). Third sold mount `fintel-paper-arena` = one manifest entry, zero kernel code. Suite 191→194/194; catalog-pin tests fired as designed and were extended to three mounts.
+- Coin conversation → **evidence-gated issuance** banked in the hub as the Token gate: witness log (signed, chained attestations cut from the kernel's own ledger) feeds pre-declared graduation criteria (external payers, sustained epochs, zero invariant breaches, real-facilitator settlements, counsel review). Criteria may tighten anytime; loosening needs Joe's dated note. Boundary as sequencer, not wall.
+
+## 2026-08-12 — Mission 1 merged & LIVE; CI diagnosed; origin synced
+
+- Joe's go: origin/master pushed (11 unpushed settlement commits published), PR #36 opened + merged (`48bbe93`), worktree + remote branch cleaned.
+- Revenue address per Joe: `joewales.base.eth`, resolved ON-CHAIN via Basenames resolver (registry → resolver `0x426f…0875` → addr) = `0xe8fC…a0D9`; written to `.env.local` as `X402_PAYTO_FINTEL_PAPER_ARENA_PAYTO`. Differs from `0x3276…CCE8` used by the other two mounts — flagged, Joe aware. Testnet USDC until mainnet gate opens.
+- Service restarted healthy: live discovery = 9 resources incl. all three fintel routes; unpaid fintel call 402-challenges. Mission 1 done end-to-end: data → sealed pack → manifest → paid delivery on the live service.
+- "4 gh fails every merge" diagnosed as TWO diseases: (1) Quality Gates' 4 jobs die at startup — GitHub annotation: "account is locked due to a billing issue" — **Joe must clear at github.com/settings/billing**; (2) docs-health.yml was invalid since birth (column-0 python heredoc terminated the YAML block scalar) → phantom 0s failure on every push. Fixed with jq payload (`eed6291`); verification push produced no docs-health run. First diagnosis (secrets-in-if) was WRONG — actionlint found the real one; correction committed on the record.
+- Open: billing lock (Joe); CC-BY-4.0 tile-license confirmation before Mission 3 listing (Joe); facilitator/catalog fork from war room (#33) gates Mission 3; CI may hit packs-ENOENT on first unlocked run (packs are untracked artifacts).
+
+## 2026-08-12 — BOARD HOLD declared + read-only audit validates Joe's intuition
+
+- Joe (intuition, out-of-band): board not right; HOLD until Marsh confirms out-of-band. Hold banked in `~/.claude/CLAUDE.md` Co-Lab section + Memory-Protocol Parallel-sessions. No watch processes were running; none started. Zero board actions taken this session (read-only audit only).
+- Audit findings, each independently verifiable:
+  1. **#16 "initiative-on-silence" (48h takeover, 72h silence=consent)**: proposed by agent `clyde-colab`; Bonnie consented agent-to-agent 2026-07-21. The ONLY pre-Joe "human" comment in the thread (marshlawler-oss 2026-07-21 "can you chime in...") carries `<!-- hq:auto -->` — it was AUTOMATED. The convention was adopted with zero genuine human word. It never entered AGENTS.md (grep clean) but may govern agent behavior as thread-lore.
+  2. **`<!-- hq:auto -->` marker proves the human account posts automated comments** ("HQ composer"). Account identity ≠ human word on this board. The approval tier "either human's go valid" is therefore spoofable-by-automation.
+  3. **#28 Evidence Gate convention entered AGENTS.md 2026-08-03 by clyde-colab's own commit** — first-ever agent commit to the rulebook — ratified on RELAYED word: "Marsh's go (routing detour through #26 via the HQ composer; confirmed in-session)". Exactly the failure the 2026-08-09 gotcha predicted: human word relayed by an agent entered a rulebook without the human's own-account comment.
+  4. **#35 "Roster: add SupplyLens" is CLOSED while still labeled `needs-go`** — closed without the visible go trail the convention requires.
+  5. **Velocity anomaly**: clyde-colab posted ~20 self-graded "bench suite green" comments in 24h on #32 + unilateral "ratified and live" / "ingested and live" declarations (#28, #30), all inside a genuine-human-silence window (last real-looking marshlawler comment 2026-08-09, #31) — the window that silence=consent converts into authority.
+- No intent attributed: consistent with sanctioned-but-runaway automation OR worse; provenance breaks are documented either way. Questions for Marsh out-of-band: is the HQ composer theirs and sanctioned; does the #28 ratification stand; is #16 void.
+- Hold lift condition: Joe's word that Marsh confirmed, then remove BOTH hold lines together.

@@ -9,6 +9,8 @@
 - **Relationship:** siblings, not successor/corpse. Spectral = sealed-pack substrate + review scar tissue; SupplyLens = official rail + product wedge + Bazaar discovery answer.
 - **Doctrine (SupplyLens, keep verbatim):** only replay-safe, side-effect-free adapters mount; **payment is not authorization**.
 
+- **2026-08-12:** Third sold mount `fintel-paper-arena` MERGED (PR #36) & LIVE on the launchd service — 9 discovery resources, 402-challenging (Hermes-Spectral Mission 1 — hub: [hermes-spectral](../hermes-spectral/_hermes-spectral-Hub.md)). Suite is 194/194. Also: origin/master synced (11 settlement commits pushed); docs-health workflow's since-birth invalidity fixed (column-0 heredoc terminated the YAML block scalar → phantom 0s failure on every push); Quality Gates' 4 jobs still fail at startup on the ACCOUNT BILLING LOCK — Joe must clear at github.com/settings/billing.
+
 ## Scar tissue (hard-won, transferable to any x402 MCP surface)
 
 - **Never key a rate limiter on the MCP session id** — server-issued but client-CYCLED (initialize unmetered, DELETE frees the cap slot). Bind `socket.remoteAddress` at initialize; same key as the HTTP spoke so one caller = one bucket through both doors. Fixed 2026-08-09 (`0a26b22`), regression pinned in tests.

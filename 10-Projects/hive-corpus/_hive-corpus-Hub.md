@@ -25,6 +25,13 @@
 - Structural fit under lock #2: provider folder `notebooklm/`, one sub-folder per notebook (Joe's own titles = facts of capture), each a BUNDLE (sources, notes, generated material, chats) with the same capture-facts frontmatter. Bundles, not transcripts — consistent with the lock's spirit.
 - **Priority flag:** these are the most at-risk corpus assets — hosted on Google's infrastructure, subject to their retention/policy/judgment, no clean bulk export. When Joe opens the collection gate, notebooks go FIRST, before chat logs. The gate itself is unchanged and remains Joe's.
 
+## Design note (2026-08-12, Joe's idea — pends locks 4–6): book-pipeline as the derived-text stage
+
+- Attach book-pipeline's deterministic core as an on-contact ingestion stage. Two-class rule keeps it constitutional:
+  - **Joe's words** (chats, notes): lossless forever per lock #3 — markdown may be emitted BESIDE, never instead.
+  - **Third-party sources** (notebook PDFs/docs, books, papers — reproducible, not authored by Joe): derived markdown + raw hash + bibliographic pointer REPLACES the bulk; original to cold storage or left where it lives. ~95–99% size reduction where the size actually is.
+- Verify at gate-open (not assumed): PDF→markdown lives in book-pipeline's deterministic half; the credit-blocked DNA stage should be irrelevant here.
+
 ## Links (do not copy)
 
 - Vault rules: [Memory-Protocol](../../00-Director/Memory-Protocol.md)

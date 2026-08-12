@@ -19,6 +19,12 @@
 5. **Merit loop** — lens findings land in a candidates file with citations; promotion into Director/hubs/rules requires Joe's dated note. No exceptions, no auto-promotion. — OPEN
 6. **Pilot = recall test** — Joe names half-remembered moments; tooling must find them and descend to the raw exchange. Findability is the bar (preserves unknown-unknowns), not curation quality. — OPEN
 
+## Scope addendum (2026-08-12): ~150 NotebookLM notebooks
+
+- In scope, same constitution — content is never judged/filtered at the door ("not PC-approved" is not a field; local-only means no platform in the loop).
+- Structural fit under lock #2: provider folder `notebooklm/`, one sub-folder per notebook (Joe's own titles = facts of capture), each a BUNDLE (sources, notes, generated material, chats) with the same capture-facts frontmatter. Bundles, not transcripts — consistent with the lock's spirit.
+- **Priority flag:** these are the most at-risk corpus assets — hosted on Google's infrastructure, subject to their retention/policy/judgment, no clean bulk export. When Joe opens the collection gate, notebooks go FIRST, before chat logs. The gate itself is unchanged and remains Joe's.
+
 ## Links (do not copy)
 
 - Vault rules: [Memory-Protocol](../../00-Director/Memory-Protocol.md)

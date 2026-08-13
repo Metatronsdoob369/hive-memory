@@ -11,6 +11,23 @@
 
 - **2026-08-12:** Third sold mount `fintel-paper-arena` MERGED (PR #36) & LIVE on the launchd service — 9 discovery resources, 402-challenging (Hermes-Spectral Mission 1 — hub: [hermes-spectral](../hermes-spectral/_hermes-spectral-Hub.md)). Suite is 194/194. Also: origin/master synced (11 settlement commits pushed); docs-health workflow's since-birth invalidity fixed (column-0 heredoc terminated the YAML block scalar → phantom 0s failure on every push); Quality Gates' 4 jobs still fail at startup on the ACCOUNT BILLING LOCK — Joe must clear at github.com/settings/billing.
 
+## Captured, deferred — squad dashboard (Joe, 2026-08-13)
+
+**NOT started. Do not begin building this until Joe explicitly says go — captured here so the requirement isn't lost, not as a queued task.** Priority order: Pi deployment → hostile-buyer validation → *then* this.
+
+Requirement: one page Joe can look at for long stretches showing everything the project's agents are doing — designed for a FLEET (many concurrent, full-time-job-equivalent agents), not just the 2 running today. Explicit non-negotiables:
+- **No theatre.** Modern, restrained, genuinely good-looking for long viewing sessions — not flashy for its own sake.
+- **Visual over verbal** — state carried by color/shape/icon/chip, not paragraphs; "bite-size... without words" where possible.
+- **Don't invent from scratch** — clone patterns from proven products, not a from-zero design pass. Precedents worth raiding: Linear (density + status clarity), Vercel's deployment dashboard (card-based status), Grafana (health panels, sparklines), a mission-control layout (squad feel, dense but calm, e.g. NASA/JPL boards), GitHub Projects' kanban language (familiar, not literal).
+- Likely shape: agent roster (who's active, on what, last action) + mission board (queued/active/done) + live system health strip (morning-check made visual) + a settlement/witness-chain ticker.
+- Emotional job, stated plainly by Joe: it should feel like a squad/team is organized and running, not like a status page.
+
+When this starts: treat it as its own design pass (research the named precedents first, then a proper design-plan step) — not a quick build.
+
+## Report framing — applies to every adversarial/validation report, not just Hermes's (Joe, 2026-08-13)
+
+Findings are never a pass/fail scoreboard. Per finding: what was tried → what happened → **what we did about it** → how it made the system better. A clean pass earns nothing by itself; a break earns nothing by itself — the follow-through is the only thing worth recording. Structure reports finding-first, verdict last.
+
 ## Scar tissue (hard-won, transferable to any x402 MCP surface)
 
 - **Never key a rate limiter on the MCP session id** — server-issued but client-CYCLED (initialize unmetered, DELETE frees the cap slot). Bind `socket.remoteAddress` at initialize; same key as the HTTP spoke so one caller = one bucket through both doors. Fixed 2026-08-09 (`0a26b22`), regression pinned in tests.

@@ -107,3 +107,10 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - Deployment decision (Joe): public x402 endpoint runs on the Pi 5 16GB; exposure via Tailscale Funnel / Cloudflare Tunnel (zero inbound ports); systemd + ARM port to build. Perimeter defense = bans/tarpits/logging/alerts — no counter-offense (legal line).
 - Facilitator brief landed (x402 hub folder): war-room "x402.org separate catalog" claim UNSUPPORTED (x402.org = standards site, no catalog); plan = x402.org facilitator for testnet dev/CI + parallel CDP-keyed Sepolia lane with Bazaar `discoverable` declaration to first-party-test indexing; mainnet switch is env+key+gate+restart when the gate artifact lands.
 - Witness log v0 build paused mid-recon on Joe's "wait"; worktree preserved (.claude/worktrees/witness-log); resumes inside the first-dollar mission.
+
+## 2026-08-12 — regroup checkpoint (evening)
+
+- Witness log + 08:00 morning check built and proven on PR #37 (branch worktree-witness-log); NOT merged/armed yet. Telegram delivery blocked: token at ~/.claude/channels/telegram/.env is 401/dead. Bot naming scheme proposed: nodeout_<role>_bot, first = nodeout_ops_bot (Joe mints at BotFather).
+- Wallet map settled: treasury joewales.base.eth 0xe8fc…a0D9 (all 3 mounts pay here; holds the Basename NFT, its only NFT); spend hand 1 = BlockRun MCP 0x3276…CCE8 ($14.06); spend hand 2 = Hermes/ClawRouter via OpenClaw :8402 = 0xe305…E486 (EMPTY — why Hermes runs free models; fund with USDC on Base to fix).
+- OpenClaw decision: consolidate onto the Pi 5 during the Pi deployment mission (single router+wallet there, Mac Hermes points at it, Mac OpenClaw retires). Not done piecemeal from here. Note: Hyper Agent closed Joe's account + kept data — reinforces own-hardware posture.
+- Coin name candidates (for kicks, gate unchanged): $OBOL (Charon's obol — Hermes psychopomp + micropayment-for-passage), $KERYX, $TALLY. Skill "sympologia" Joe mentioned: not found in ~/.claude/skills (23 skills inventoried; global-arbitrage-analyst is an empty scaffold).

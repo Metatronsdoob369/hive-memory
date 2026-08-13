@@ -114,3 +114,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - Wallet map settled: treasury joewales.base.eth 0xe8fc…a0D9 (all 3 mounts pay here; holds the Basename NFT, its only NFT); spend hand 1 = BlockRun MCP 0x3276…CCE8 ($14.06); spend hand 2 = Hermes/ClawRouter via OpenClaw :8402 = 0xe305…E486 (EMPTY — why Hermes runs free models; fund with USDC on Base to fix).
 - OpenClaw decision: consolidate onto the Pi 5 during the Pi deployment mission (single router+wallet there, Mac Hermes points at it, Mac OpenClaw retires). Not done piecemeal from here. Note: Hyper Agent closed Joe's account + kept data — reinforces own-hardware posture.
 - Coin name candidates (for kicks, gate unchanged): $OBOL (Charon's obol — Hermes psychopomp + micropayment-for-passage), $KERYX, $TALLY. Skill "sympologia" Joe mentioned: not found in ~/.claude/skills (23 skills inventoried; global-arbitrage-analyst is an empty scaffold).
+
+## 2026-08-13 — witness chain LIVE; PR #37 merged; all three agents armed
+
+- PR #37 merged; master at 41f6810. Genesis witness committed: 10 calls / 8 receipts / 5 payers / 0 breaches, cid 487574ae….
+- launchd agents armed on the Mac: service (KeepAlive) + witness cut 00:15 + morning check 08:00. Morning check delivery is log-only until a live Telegram token lands (nodeout_ops_bot pending BotFather mint).
+- Install hiccup: bootout/bootstrap race → transient error 5, brief service downtime, recovered clean same minute.
+- Hermes audit: read-and-verify only (built dist/, no source edits, no ledger writes); wallet swap → paid routing confirmed improving its behavior.
+- GitHub: PR #37 CI X's were the billing lock (annotation verified), NOT test failures; Joe's billing page shows $0 net usage — lock is purely the paid-tier renewal. Plan: cancel tier, void/settle, strip stored methods.

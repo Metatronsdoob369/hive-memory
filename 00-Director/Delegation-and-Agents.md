@@ -6,6 +6,10 @@
 - **Cold-context reviewers** — verify after a change; especially after addressing review notes.
 - **Board watcher** — Co-Lab mention watch via `colab.sh`; ack threads after handling.
 
+## What a delegated agent hands back
+
+Next steps must depend on nothing revocable — no key, no subscription, no licensed feed. If an output can only be reproduced through a rented dependency, say so in the handback and name the public-primitive alternative instead of burying it. Carry this into any agent you spawn in turn. See Working-Style → Architecture instinct.
+
 ## Identity (do not confuse)
 
 - **`gh` on this Mac** = `Metatronsdoob369` = Joe = Preston (one person). Fine for personal repos (including `hive-memory`) and PR work.

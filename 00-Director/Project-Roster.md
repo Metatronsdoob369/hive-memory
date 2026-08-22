@@ -15,7 +15,8 @@ One line each. Detail lives in `10-Projects/<name>/_<name>-Hub.md`.
 - **book-pipeline** — owned books → artifacts/lexicon/skills for Private Confidant orbit; deterministic core real, DNA stage credit-blocked. Hub TBD; **compile: hold**.
 - **kft-payroll-demo** — Co-Lab trucking payroll demo; live, multi-driver keystone shipped.
 - **hermes-spectral** — Hermes as financial-intel substrate on x402 rails; residuals stay perks ("bartender and the booze"). Handoff hub is the executing brief; vision PDF archived beside it. Rails + scar tissue live in x402-points-of-sale hub — cross-link, never copy.
-- **stARBITRAGE / property-hydra** — sovereign macro + unclaimed-property; local geo engine (GEOTRANS). **Compile: hold** (different hunt surface).
+- **stARBITRAGE / property-hydra** — one weapon: unclaimed Layer 1 → overlays → assembler/esign. Agent-ops loop banked 2026-08-22 (`AGENTS.md` + `docs/HYDRA_OPS.md`). Atlas/GEOID remain overlays, not the close path. Hub: `10-Projects/property-hydra/`. **Compile: hold**.
+- **Signal** — client-site upgrade: one embed audits SEO+AIO on load; token dashboard. v0.1 banked 2026-08-22 at `/Users/joewales/signal`. Hub: `10-Projects/signal/`. **Compile: hold** (hub only until Joe expands pilot).
 - **cosine+ brand** — sage/copper/near-black, crosshair geometry; sage is line-work only.
 - **Hive memory router** — destination: vault → Graphify+wiki → thin `hive` autopack/assemble (see arbiter `tools/hive/`). Pilot compile = Hive + arbiter only until Joe opens next root.
 - **hive-corpus** — 3k-hour LLM session-log onboarding + LLM wiki. DESIGN GATE: six decisions must be LOCKED in the hub before any ingestion (Joe 2026-08-12). Hub is the readiness record; do not start early.

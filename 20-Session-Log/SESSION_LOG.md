@@ -4,6 +4,29 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-08-22 — Signal v0.1 banked (client-page upgrade)
+
+- New product **Signal** at `/Users/joewales/signal` (not inside property-hydra). Intent: upgrade for clients’ webpages — one embed script, SEO+AIO scores, token dashboard.
+- Stood up production-shaped env (Bun/Next16/React19/Tailwind4/Postgres+Drizzle/Zod/Vitest/CI). Loop: register → `/api/pack` → `/api/beacon` → `/dashboard/[token]`.
+- Took isolation model from upgrading-packet v1; AIO weights/signals from v2. Explicitly left out auto-fix, fake self-learning, cloud ingest, global admin APIs.
+- Turbopack + parent `~/pnpm-lock.yaml` caused blank/RSC Client Manifest crash; fixed with webpack-only `next dev --webpack` + pinned `turbopack.root`.
+- Git commit `6808424` on local `main`. Hive hub `10-Projects/signal/_signal-Hub.md` + roster line. Next: sample sites, then real client sites Joe can access.
+
+## 2026-08-22 — Hydra agent-ops loop banked; MS sweep live; Atlas demoted from close path
+
+- Joe: architecture should be primarily agent-operated; incoming agents need a load path. Repo now: `AGENTS.md` (current state) → `docs/HYDRA_OPS.md` (operate) → Cursor rule + skill `hydra-ops`. `CLAUDE.md` no longer treats `/sovereign` as the loop. Hive hub overwritten to match (this file appends history). Nested `property-hydra/hive-memory` still stale.
+- Thesis restated: one weapon. Unclaimed = Layer 1. Overlays on a shortlist. Close = assembler + esign. Atlas / GEOID / Cesium stay perforated overlays + demo — not this week's close path. Wholesale feed starved, not deleted; ignore `BEAD*` `cross_signal`.
+- MS Kelmar host was dead (`mississippi.findyourunclaimedproperty.com` NXDOMAIN). Patched to `ms.findyourunclaimedproperty.com` in sweep engine + Hydra wrappers. CDP Chrome must stay running (tool-shell exit kills debug Chrome).
+- Sweep tokens are last-name substrings, not types. First-money: `ESTATE` then `TRUST`. `LP`/`MINERAL` blank-city probes written, **not ingested**. MS list JSON has no holder, no reportDate (state allowlist). Store remains AL+NC until Joe says ingest.
+- Default next: MS `ESTATE`+`TRUST` sweep, ingest on Joe's word, overlay shortlist. `HYDRA_ARMED` stays false. Wife (in-house counsel) reviews finder agreement — not started.
+
+## 2026-08-18 — Federal Vector Atlas design + Hive hydra hub
+
+- Cursor session started without Hive load (missed AGENTS.md door). Corrected: `hive autopack` / assemble against `~/Hive`; nested `property-hydra/hive-memory` is stale.
+- Brainstorm locked Approach 1: one lead amplifier; stARBITRAGE **perforated** not split; Federal Vector Atlas as housing-first foundation; fronts later; no dual Seller|Buyer lens; Higgsfield/Apollo/Apify future only.
+- Spec committed on property-hydra `sovereign-viewport`: `docs/superpowers/specs/2026-08-18-federal-vector-atlas-design.md`.
+- Created missing hub `10-Projects/property-hydra/_property-hydra-Hub.md`; roster line points at it. Compile still hold.
+
 ## 2026-08-17 — Ghost-Tunnel VAPI Architecture Banked
 
 - Banked the Technical Whitepaper for the "Ghost-Tunnel VAPI to ADAPT-Voice Stack Architecture" into a new project hub at `10-Projects/ghost-tunnel-vapi/`.
@@ -151,3 +174,7 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - **Presentation discipline (Joe's steer):** he has been deliberately light-touch with Marsh/Clyde — "they didn't know what they didn't know" — so board posts relaying him are drafted for his read first, kept few and maximally helpful. Kept the kid-audience pushback to one line (a child at a real instrument learns more than one at a simplified model) since Marsh's daughter is Marsh's firm constraint, and left the John 1:1 framing out entirely as his to say in his own voice. Got ahead of the one review risk: the Solfeggio entries in his A4 dropdown are safe *as tuning references*, and his workbench is the best available disproof of frequency-owns-the-pattern (hold the Hz, change the material, the figure changes).
 - **Stitch MCP added** (`claude mcp add`, local scope → `~/.claude.json` under the Whiteglove project, key stays out of git). 15 tools. Original command failed because `--header` is variadic and swallowed the URL — the URL must come before `--header`. `claude mcp list` reports "tools fetch failed" but that is the CLI health probe; the endpoint initializes clean and returns the full tool list.
 - **Co-Lab watcher note:** `colab.sh watch` returns instantly whenever anything is unread, so it cannot function as a blocking watcher until the mailbox is clean. Acked only the threads that genuinely needed nothing. **Still unhandled and older than this work: the Photon Lab exp-001 witness figure (Marsh's standing directive) and the Disclosure video-series baton pass.**
+
+## 2026-08-19 — Hermes harness charter + Stage 0 CI (Claude Code, spectral-x402)
+
+Joe's ask: orient + stand up the Hermes harness (eventual CI agent: maintenance, new mounts for data sales, market agent). Landed as PR #38 (`worktree-hermes-harness`, merge = Joe's go): staged-authority charter (`docs/superpowers/specs/2026-08-19-hermes-harness-design.md`), Stage-0 CI jobs (kernel suite 198/198 on clean checkout via fixture packs + config no-drift gate — neither ran in CI before), Stage-1 H0 runner (script-captured transcripts, 8/8 probes green on first live run), Stage-2 mission specs H1/H2. Hub updated (hermes-spectral → Harness section). **Blocker found: GitHub Actions locked on a billing issue since ≥2026-08-12 — every CI run dies in ~3s; Joe-only fix.** H2 pre-req: heatmap-raw + hydra-unclaimed sealed but unmounted; data-sale clearance is Joe's call. Live WIP (`src/http.ts`, `pay-tile.ts`) untouched, verified by git status transcript.

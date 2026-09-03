@@ -10,4 +10,5 @@ Agents hitting old contacts should land here. Prefer auto-follow (thin pointer /
 | Telekenesis / `domicile_live` agentic-memory | Dormant; use Hive |
 | Tripwire `NODE_OUT_Master/bloat/core_intelligence/session_management/CLAUDE_SESSION_STARTUP.js` | Load/print from `00-Director/` (no Firebase required) |
 | Per-project stray `MEMORY.md` | Replace with pointer → `10-Projects/<that>/` |
+| `property-hydra/hive-memory/` (nested clone) | Stale. Writes → this vault, hub `10-Projects/property-hydra/` |
 | Arbiter / bond research notes | Hubs link ledger + intelligence-vault HANDOFF; do not cubby copies |

@@ -16,7 +16,7 @@
 - **Seller rails:** `~/Whiteglove/spectral-x402` — mount kernel, two doors (HTTP + MCP Streamable HTTP), sealed content-addressed packs, SQLite ledger with structural invariants, real-settlement gate. Adding a mount is **config-only** (proven: `src/test/boundary.test.ts`, third-mount test — that test is the recipe). Current state, scar tissue, and the MCP-listing rules: [x402 hub](../x402-points-of-sale/_x402-points-of-sale-Hub.md) — **read it before any MCP-surface or listing work.**
 - **Buyer side:** `~/Whiteglove/packages/wallet-mcp` + `spectral-x402/scripts/pay-tile.ts` — agent-pays capability, started 2026-08-10.
 - **Corpus source:** `~/NODE_OUT_Master/financial-intel-mcp` — 31 tools, paper arena, survival/guardrails loop. Its intermediates (consistency, timing, provenance) ARE the residual inventory; no new pipeline needed to observe them.
-- **Hermes runtime:** `~/.hermes/config.yaml` (blockrun model routing).
+- **Hermes runtime:** `~/.hermes/config.yaml` (blockrun model routing). Live channels / Proton / Whisper: [hermes-runtime](../hermes-runtime/_hermes-runtime-Hub.md).
 - **Sibling product:** SupplyLens (`Marsh-Press-Co/supplylens`) — official x402 v2 stack, Bazaar declaration in. The discovery precedent to copy, not re-derive.
 
 ## Mission status
@@ -40,6 +40,39 @@
     - What held up under live spot-check: unpaid-request → 402 with the real challenge shape, and malformed-cid → 400 `args_invalid` — both genuinely correct, for whatever that's worth given the rest.
     - **Mission 2V is NOT closed. Full re-run required, end to end (not just the MCP section) — the price error was in the simplest possible HTTP test, so nothing in the first report can be assumed correct by association.** New evidence bar: raw request/response transcripts (verbatim status + full body) pasted into the report for EVERY attempt — no paraphrase, no narrated summaries. Paraphrase is exactly where this drifted from reality.
     - **Ask (Joe, 2026-08-13): Hermes should explain, in its own words, in the redo report, what it believes went wrong in the first pass and why** — not accept a pre-packaged explanation. The value of this miss is the growth extracted from it; a redo that only fixes the numbers without naming the root cause wastes the miss.
+
+## Harness — staged authority for Hermes as CI agent (charter landed 2026-08-19)
+
+Charter: `Whiteglove/docs/superpowers/specs/2026-08-19-hermes-harness-design.md`,
+landing via PR #38 (`worktree-hermes-harness`) — merge is Joe's go. Three lanes
+(maintenance / new mounts for data sales / market), authority as a ladder earned
+per rung; the Mission-2V evidence bar governs ALL harness reports (raw
+transcripts, verbatim, every attempt — and the harness script captures the
+transcripts itself, so narration can only cite, never invent).
+
+- **Stage 0 — CI substrate (in PR #38):** `quality.yml` now runs spectral-x402's
+  full suite (198/198 on a clean checkout via `harness/ci-fixture-packs.sh`
+  fixture packs; the script refuses to run where a signing key or sealed
+  edition exists) and spectral-config's `check:drift`. Neither was in CI before.
+- **Stage 1 — H0 maintenance, report-only:** `harness/maintenance-check.sh`,
+  8 read-only probes → `evidence/hermes/maintenance-<UTC>/` + sha256 manifest.
+  First live run 2026-08-19: 8/8 exit 0; chain 7 witnesses / 0 breaches;
+  commerce delta flat since genesis (the flatline is now a probe, not a vibe).
+- **Stage 2 — mutation-via-PR only (specs ready, not assigned):**
+  H1 witness backfill (commit witnesses 000002+ the way genesis 000001 was),
+  H2 mount-a-pack (config-only, fintel block is the template; heatmap-raw and
+  hydra-unclaimed are sealed on disk unmounted — **data-sale clearance is
+  Joe's call before H2 is assignable, hydra especially**). Manual Joe-only
+  steps (payTo env, live restarts incl. the MCP-door kickstart ctl.sh misses)
+  ride in each PR body.
+- **Stage 3 — market lane:** Mission 3 unchanged, sequenced behind the CDP
+  facilitator switch + CC-BY-4.0 confirmation. The harness only reserves the
+  slot. H-numbering is the harness's own; hub Missions 1–5 unchanged.
+- **First finding (from H0's `ci-runs` probe): GitHub Actions has been dead
+  since at least 2026-08-12 — "account is locked due to a billing issue",
+  every run fails in ~3s, including all of PR #38's jobs. Joe-only fix
+  (GitHub billing for Metatronsdoob369). Until then Stage 0 is proven locally
+  only (transcripts in the PR).**
 
 ## Missions — in order; run Boundary 1 before each
 

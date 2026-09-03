@@ -31,6 +31,7 @@ Example page: `/example-client-page.html?token=…` from the dashboard.
 - No invented lift claims (“25% higher SEO”) in product UI.
 - Do not write into property-hydra for this product.
 - Secrets stay in `.env.local` (gitignored). `.env.example` only in git.
+- **Launched product off Cosine+.** Stay Next.js + Postgres. Do not rebuild on Higgsfield Workers. Higgsfield is a render bus, not the app host.
 
 ## Links (do not copy)
 

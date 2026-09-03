@@ -37,3 +37,12 @@ See also: Hive Memory-Protocol; project hubs under `10-Projects/`.
 ## Operating philosophy: stand up, automate, pull away (Joe, 2026-08-12)
 
 No agent drives any system continuously. The pattern: build it → wire its own supervision/automation (timers, restarts, alerts) → step away → periodic check-ins judge how it did. "Done" for any system includes its automation; a system that needs a driver isn't done. Applies to agents too — Hermes and sessions get stood up for a bounded purpose and released, not left hovering.
+
+## Firehose then touch-up (Joe, 2026-09-01)
+
+Joe will talk long. The small points are the brief. Do not grab the biggest shape and rebuild.
+
+- One pass, one change. He points; you do not reinterpret.
+- Rewind the piece, then apply the named delta. A justified redesign is still a miss.
+- After a firehose, communicate back what you heard in the small points before (or instead of) inventing a new artifact.
+- Visual: elements earn pixels. Unreadable labels are slop. Motion is a reward, not wallpaper. He left dark kits because wet RGB is hard to dodge — charcoal can still work if it stays matte/grain, not bloom.

@@ -4,6 +4,29 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-09-01 — Astro lander touch-up + Hermes OpenRouter 401 + default → Grok
+
+- Cosine Astro lander (`/Users/joewales/domain-recovery/Astro_Build`): charcoal spatial-glass restyle. Joe liked the reimagining, not a scrape. Agent over-rebuilt the opener; Joe: rewind original chip/scale, SYSTEMS thinner + gradient, whole piece on one glass card. Topology under the site (mouse lag). Presence ignition, not scroll. Unread ticker/labels gone. **Not pushed** — GH Pages still the old cut. Pick up in the dashboard.
+- Doctrine (Working-Style): firehose → one pass, one change. Communicate the small points back. Don’t rebuild.
+- OpenRouter 401 User not found: `.env` had a new valid key (auth 200); running gateway + `config.yaml` `secrets.bitwarden.access_token_env` still held the old key (`KEY=value` in that field is illegal — env **name** only). Manual OpenRouter pool entry removed. Default profile was `blockrun/free` / clawrouter (dead); set to `grok-4.6` / `xai-oauth`. Joe confirmed Profiles card says Grok.
+
+## 2026-08-30 — Sovereign Pipeline execution and Active Exposures
+
+- Executed the Local Sovereign Pipeline (Pathway A) against the target CIK array. 
+- **Relocated results:** Outputs (raw lineage JSONs and AL/DE escheatment projections) were moved from the transient Downloads workspace into the vault at `~/Hive/20-Session-Log/sovereign_pipeline_results`.
+- Active exposures discovered for Regions (2026-2029 expiries) and Meritage Homes (2026-2029 expiries) for asset types SC10, SC13, and SC54.
+- Anomaly noted: AT&T and Be Safe CIKs provided in the chronological inventory mapped to PEMEX and HOOTEN respectively, yielding 0 events. Recommend verifying these CIKs.
+
+## 2026-08-29 — Hermes live (Telegram + Proton + Whisper); disk cleared; Cosine+ print kit
+
+- Disk was 3.6 GB free / 100% Data. Cleared regenerable caches (~11 GB) then iMessage tmp+attachments, Claude `vm_bundles`, Podman machine, `~/node_modules` (~34 GB). **~50 GB free.** `chat.db` kept.
+- Hermes Telegram already live (home DM). Email was `Connection refused` because Proton Bridge was not installed and Hermes speaks implicit TLS:993.
+- Installed Proton Mail Bridge 3.26. Paid account `joecwales` (2 addresses; `calmingyourchaos` is the Hermes From). First Bridge login as `joecwales@proton.me` returned FREE_USER; later login loaded and synced. IMAP user is the alias, password is Bridge-generated (not Proton login).
+- Local Hermes email adapter patched for STARTTLS 1143/1025 + loopback self-signed cert. Gateway: email connected as `calmingyourchaos@proton.me`, allowlist `H.Maker@proton.me`, Telegram back up.
+- `faster-whisper` in Hermes venv; `base` int8 on Intel i5. Test: “Hermes Whisper is online.” Telegram voice notes should transcribe.
+- Cosine+ Autonomous stays the launch brand; Higgsfield = factory (Starter unlim models, not Plus). Signal stays Next.js. No Higgsfield `type app`. Cream/sine/copper-plus kit overrides the old dark heptagon for ads.
+- Hubs: `hermes-runtime` created; cosine-brand + signal boundaries overwritten. Secrets not written.
+
 ## 2026-08-22 — Signal v0.1 banked (client-page upgrade)
 
 - New product **Signal** at `/Users/joewales/signal` (not inside property-hydra). Intent: upgrade for clients’ webpages — one embed script, SEO+AIO scores, token dashboard.
@@ -178,3 +201,12 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 ## 2026-08-19 — Hermes harness charter + Stage 0 CI (Claude Code, spectral-x402)
 
 Joe's ask: orient + stand up the Hermes harness (eventual CI agent: maintenance, new mounts for data sales, market agent). Landed as PR #38 (`worktree-hermes-harness`, merge = Joe's go): staged-authority charter (`docs/superpowers/specs/2026-08-19-hermes-harness-design.md`), Stage-0 CI jobs (kernel suite 198/198 on clean checkout via fixture packs + config no-drift gate — neither ran in CI before), Stage-1 H0 runner (script-captured transcripts, 8/8 probes green on first live run), Stage-2 mission specs H1/H2. Hub updated (hermes-spectral → Harness section). **Blocker found: GitHub Actions locked on a billing issue since ≥2026-08-12 — every CI run dies in ~3s; Joe-only fix.** H2 pre-req: heatmap-raw + hydra-unclaimed sealed but unmounted; data-sale clearance is Joe's call. Live WIP (`src/http.ts`, `pay-tile.ts`) untouched, verified by git status transcript.
+
+## 2026-08-23 — spectral-terrain: self-portrait, cold map, Bench doctrine; AEP/FTF productization green-lit
+
+- **Self-ingest day.** Terrain engine pointed at Hermes's own source (2,692 files). The 1024-D Ollama pipeline stalled twice: unbounded chunk `Promise.all` (~3,000 concurrent embeds from a 1.8MB `web_dist` minified bundle that escaped the `dist` SKIP_DIRS entry) seized single-threaded Ollama solid — engine 0% CPU, stdout block-buffered invisible, even external health pings timing out. Root-caused by polling Qdrant point counts (337→338 in 8 min = stall, not slowness) plus a stack sample and a reproduced 20s-timeout embed. Engine patched: bounded concurrency 6, 30s AbortSignal per call, 128KB file cap, deterministic sha512(domain::path) IDs (re-ingest = upsert, no ghosts), SKIP_DIRS += web_dist/release/coverage.
+- **Structural 5-D provider shipped** (Joe: "you don't need 1024, your code does not mutate" — cartographer 0-dim injector lineage promoted to native provider). Deterministic fingerprints `[log1p chars, imul31-hash%1000, log1p lines, log1p defs, log1p imports]`, l2-normalized, zero network: **2,627 files in 7.3s** (vs 45+ min stalled at 12%).
+- **Self-portrait findings:** dir-purity @k=8 = 50.2% vs 33.9% random in raw 5-D; empty `__init__.py` files = isolated cold/high-shatter diagonal streak ("empty rooms"); heat ↔ defs r=+0.81, heat anti-correlates with size (structural intensity per byte, not bulk); hottest core = tests (56% of shards). Time-as-position pass flat (r≈−0.01) — corpus written in one 12-day burst; keep the pass for organically-grown repos.
+- **Cold map v1 (Bench doctrine).** slop-canon fractures + legal-case deaths + five same-day incident reports → `cold-map-5`; all 2,627 shards scored by cosine distance to the failure manifold. Empty rooms sit adjacent to the manifold; cold-dist ↔ heat r=+0.649. Doctrine (Joe): failure = salaried full-time position, Supreme Court tenure, zero attrition, never hire the same position twice, door never closes to new failure modes; success by proxy = distance to death. Caveat: 13/15 records prose — manifold sharpens with density; nightly circadian re-ingest is the next hook.
+- **README testimonial** written in-repo (`~/spectral-terrain/README.md`): day's story, receipts table, Bench protocol. Skill library updated: spectral-terrain SKILL.md (structural mode, pitfalls, cold map, collections) + `references/structural-provider-and-cold-map.md`.
+- **Productization green-lit (Joe):** MCP product shape. Family named — **AEP (Agent Environmental Positioning)** = the MCP wedge (post-RAG positioning), **FTF (Fine-Tuned Files)** = terrain-passed datasets with cold_dist columns (the payload). Vendor-neutral by construction (no AI-company names/brands/APIs — Joe's legal concern), local-first, 5-D structural default. Pricing $49 perpetual / $79yr Atlas Pass (quarterly anonymized community bench packs = recurring hook) / $299yr Team. 3-week plan; "Karst" name candidate (USPTO check pending); Week 1 = clean-room rename, embedded vault, npm packaging, MCP serve mode. Hive hub updated same session.

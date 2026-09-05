@@ -4,6 +4,27 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-09-05 — Storm rsync Mac → 5820 WSL
+
+- **Flyover:** `/Users/joewales/Projects/flyover/` → `5820:/srv/repos/flyover/` (`--rsync-path=wsl.exe rsync`). HEAD `0ba2c8e` → `f3973be`. LFS included; `renders/` excluded. `git lfs fsck OK`.
+- **Windows `C:\Projects\flyover` Synchronized:** Resolved git divergence between Mac (`fda65aa`) and 5820 (`75ff0f5`). Confirmed master mesh SHA256 (`onsc_clubhouse_master_crisp.fbx` `67DFACBA...`) was 100% identical on both sides; 5820 local history preserved on `storm-backup-5820` branch, and Windows `C:\Projects\flyover` clean fast-forwarded to `fda65aa`. Both Mac and 5820 are in identical lockstep.
+- **Three Known Bugs Resolved (Commit `fda65aa`):**
+  1. *Twinmotion duration:* Corrected `duration_seconds = 22.033` (661 native 30fps keyframes = 22.033s duration, rendering ~1322 frames @ 60fps) across `twinmotion_job_spec.py` and `verify_twinmotion_output.py`.
+  2. *Gemini Vision QA:* Eliminated fabricated confident PASS when `GEMINI_API_KEY` is missing; now explicitly returns `ADVISORY_SKIPPED` with `confidence: 0.0`.
+  3. *Dead Driver:* Permanently deleted `engine/twinmotion_driver.py` (OS desktop automation rejected in favor of native UE5 Movie Render Queue / Datasmith DirectLink).
+- **Signal:** new `/srv/repos/signal` @ `086ce4d` (`2026-09-05-h0kg`). Excluded `node_modules/`, `.next/`, `.env.local`.
+- Verify on the box: `git -C /srv/repos/flyover log -1 --oneline` and `git -C C:\Projects\flyover log -1 --oneline` (both match `fda65aa`).
+
+## 2026-09-05 — Storm persist (Cursor / Signal workspace)
+
+Joe: bad storm, save all needed to Hive. No passwords written.
+
+- **Hive write-through:** Signal hub current-state → 2026-09-05; Flyover hub 2026-09-05 block (bench live, storm checkpoint, login surfaces); roster one-liners; this entry. Compile after write so autopack sees it.
+- **5820 login (same day):** Joe never made a Windows password; Ubuntu first-boot user `themachinist` exists; Mac login is a third surface. Prompt was not “one password.” He confirmed **im in**.
+- **Signal (this Mac):** `/Users/joewales/signal` branch `2026-09-05-h0kg` @ `086ce4d`, clean, **no remote**. One commit ahead of `main` `6808424`. Experiment loop + terrain husk + e2e + tenant/guards + Higgsfield skill copies. Code dies with the Mac unless copied or a remote is added.
+- **Flyover (this Mac):** `/Users/joewales/Projects/flyover` `master` @ `f3973be` storm-checkpoint commit already on disk. **No remote.** Off-Mac copy: 5820 `/srv/repos/flyover` + `C:\Projects\flyover` from commissioning (not verified this session).
+- **Not a product fact:** macOS window focus is `⌘Tab` / `⌘\`` then `Space` to scroll — answered this session only.
+
 ## 2026-09-05 — Dell Precision 5820 GPU Render Bench Commissioning: Path A (WSL2 + Windows Native OptiX + Headless Automation)
 
 - **Google Solar API Live Verification & Ground Truth Roof Datum (`engine/check_solar_api.py`):**

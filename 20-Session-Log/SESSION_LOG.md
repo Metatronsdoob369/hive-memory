@@ -20,6 +20,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - **First GPU Render Fired on THE BENCH:**
   - Rendered `sites/onsc-clubhouse/models/infinisplat/onsc_scene.ply` (1,483,945 3D Gaussians) via Blender 4.5 LTS on NVIDIA GeForce RTX 3070 (OptiX / EEVEE Next).
   - High-res frame `scratch/bench_splat_test.png` (1536x1152, 2.3 MB) rendered in 23.7s with Spherical Harmonics SH0 color rasterization. Fetched to Mac artifacts and verified visually.
+- **Multi-Pass G-Buffer GPU Extraction (Shatter & Spectral Bridge):**
+  - Executed `engine/render_pipeline_breakdown.py` on Dell 5820 via Cycles OptiX GPU.
+  - Rendered all 4 canonical pipeline maps (Albedo Color, Metric Normalized Z-Depth 40m-220m, World-Space Surface Normals, and Composite) across all 5 key trajectory waypoints (Frames 0, 180, 285, 480, 600) at 1.50 seconds per frame.
+  - Assembled `onsc_pipeline_multi_pass_breakdown.png` contact sheet and `hero_frame_0180_gbuffers.png` matching Joe's "AERIAL BUILDING RECONSTRUCTION AND FLYOVER VISUALIZATION PIPELINE" blueprint.
+  - Documented the direct mathematical bridge linking Joe's 2D shatter maps (Voronoi/polygon tessellations) to 3D Gaussian covariance matrices ($\Sigma = R S S^T R^T$), and spectral heat maps to Spherical Harmonics ($Y_{lm}$) bidirectional radiance fields.
 
 
 - **Mathematical Calibration & Gate:**

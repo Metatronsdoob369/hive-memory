@@ -13,6 +13,7 @@
 - **GPU server** arriving ~2026-09-05 — becomes the training/render worker (3DGS is renderer route 3). This iMac is Intel/AMD: no CUDA.
 - **Renderer leg staged, Higgsfield paywalled (2026-09-03):** `refs/` (8 property photos + viewpoint index) and `engine/gen_qa.py` (time-mapped anchor/roof-edge overlay + held/drifted/hallucinated verdict) committed (6ed9360); gen_qa self-tested clean against the orbit guide. **Blocked on Joe:** Higgsfield CLI account (phooten4@gmail.com) is free-plan with 2 credits; the orbit run alone is 90 credits @1080p (45 @720p, ~198 total for all three beats) — pay or pivot (HeliosGen not found on this Mac — no Helios app or folder located 2026-09-03).
 - **Route-2 (Blender) staged (2026-09-03, d51eafc):** Joe's `headless_blender_render.py` drop adapted into `engine/blender_gbuffers.py` (bugs fixed: argparse -h crash, 100 m clip_end, default-cube purge) + `matrices_to_trajectory.py` (quats at the 6-dp rounding floor, translations exact) + `roof_to_obj.py` (30 facets/47 verts, ENU verbatim). **DONE 2026-09-03:** Blender 4.5 installed (brew cask), camera acceptance PASSED — bidirectional 100% edge match vs `qa/clubhouse_roof_edges_px.csv` on all contact frames (fixes from the live run: Wireframe modifier not show_edges, Standard view transform not AgX, DEPTH enum absent → compositor Z-pass someday). Full 661-frame control clips rendered + encoded: `renders/wire_fov40.mp4` (structure) and `mask_fov40.mp4` (silhouette), 22.033 s each, git-ignored. Repo at 005c2c9. **Next:** feed guide + wire/mask + refs/ photos to whichever video model wins (Higgsfield still paywalled), or shingle-swap texturing on the v0 OBJ directly in Blender.
+- **Material pass complete (2026-09-03, 7718543):** v0 roof re-covered in the generic laminate spec (`material_spec.json`, sector-agnostic schema, quotable=false) at true course scale — proofs: course spacing 67.67 vs 67.77 expected (0.07-course diff), alpha alignment 100%, light + hold margin confirmed. Sun A/B ran: spec'd 5.4°/275.5° kills shade planes; **20.7°/264.6° (18:00 local) chosen** — material sun is free since the guide composite is internal-only (fact 10). `renders/composite_internal_fov40.mp4` = first "clubhouse in shingle X" in motion (INTERNAL). **Hero-still blockers:** refs EXIF stripped (need original photo / stated capture time / shadow-derived sun) + camera registration of the oblique still to write. Depth pass (HF/VACE step 1) queued behind the hero still.
 - **Grok Imagine leg, first generation graded (2026-09-03, 5137ccb): verdict HALLUCINATED.** Web surface accepts image uploads only (no video-to-video anywhere — Image/Video modes toast "Only image files are supported", Agent mode drops it silently; xAI API key also out of credits). One i2v run from master f180 seed (720p/6 s → 1280×720@24): cupola 187–207 px off the true track, camera pushed in instead of orbiting, building redesigned, roof brown not grey, Google Earth mark reproduced photorealistically. Full QA evidence in `renders/gen/`. **Implication:** Grok i2v cannot hold geometry unaided — its lane is step-2 photo replicas and the step-3 hero still (drift-tolerant); structure must come from the Blender G-buffers or a control-signal-capable model. Steps 2/3 and any second generation await Joe's go.
 
 ## Open decisions (Joe)
@@ -40,3 +41,50 @@
 ## Notes in this folder (from the 2026-09-02/03 browser session)
 
 [[Flyover Pipeline]] · [[Earth Studio Findings]] · [[Earth Studio Export Format]] · [[Earth Ground Truth Skill]] · [[ONSC Clubhouse]] · [[Flyover SaaS Backend]] · [[Product - Shingle Visualization]] · [[Renderer Hand-off]] · [[Decision - Field of View 40]] · [[Decision - Top keys offset 3 m]]
+
+### Milestone: 3D AI Reconstructed Asset Extraction (2026-09-04)
+- **Model:** Extracted via TRELLIS.2 from reference oblique image.
+- **Mesh:** 152,021 vertices, fully modeled architectural features (cupola, weathervane, hips, valleys, chimneys, porch).
+- **Cleanup:** Floating lake background plate isolated and stripped via Blender geometry pipeline.
+- **Orientation & Origin:** Centered at (0, 0, 0) with Z grounded at foundation level.
+- **Artifact:** `sites/onsc-clubhouse/models/onsc_clubhouse_clean.glb` (8.2 MB).
+- **Visual Verification:** `sites/onsc-clubhouse/renders/trellis_clean_preview.png`.
+
+### Milestone: 661-Frame Trajectory Integration & Multi-Angle Flight Renders (2026-09-04)
+- **Asset Placement:** `onsc_clubhouse_clean.glb` scaled to 60.18m span and oriented along site bearing.
+- **Flight Engine:** `engine/render_flight_test.py` executed across 6-DoF Google Earth Studio trajectory (`clubhouse_trajectory.json`).
+- **Physical Sun:** Azimuth 178.2°, Elevation 62.6° matching EXIF drone timestamp.
+- **Contact Sheet Verified:** 5 keyframes (f0, f180, f285, f480, f600) showing continuous 360-degree orbit from lake approach (20m AGL) to top-down inspection (85m AGL).
+- **Output:** `sites/onsc-clubhouse/renders/trellis_flight_contact_sheet.png`.
+
+### Milestone: Mathematical Gate Correction & Oblique IoU Resolution (2026-09-04/05)
+- **Mathematical Fix (144bf58):** Yaw sign formula corrected to $\psi = (90 - B) - \theta$. Optimal scale = `61.664`, optimal yaw = `−23.16°`.
+- **Oblique IoU Gate:** At nadir (f600), 180° ambiguity is near-degenerate (0.509 vs 0.499); on oblique (f285), entrance asymmetry separates decisively (0.494 vs 0.454). Rule: resolve orientation flips on oblique frames.
+- **Aspect Deficit Proof:** 1D linear cross-axis scaling (1.278×) proves insufficient because stretching warps bilateral masses into ovals; true multi-view reconstruction is mathematically required.
+
+### Milestone: InfiniSplat 3DGS Radiance Field & Drone Sweep (2026-09-05)
+- **Model:** 1,483,945 3D Gaussians (`onsc_scene.ply`, 79 MB) reconstructed via `PLUS-WAVE/InfiniSplat` in 6s from `real_hero_weatheredwood.jpg`.
+- **Viewer:** Embedded WebGL standalone viewer `standalone.html` (21 MB).
+- **Flight Render:** Blender Geometry Nodes point-rasterization pipeline reading SH0 vertex colors rendered 30 fps smooth camera sweep `onsc_infinisplat_flight.mp4`.
+- **Finding:** Single-view splat demonstrates why 360° flight requires opposing baseline views (frustum boundary cutoff).
+
+### Milestone: Master 360° Composite Flight Across All 661 Frames (2026-09-05)
+- **Solid Clubhouse Overlay:** `onsc_clubhouse_v2.glb` rendered with verified scale `61.664`, yaw `−23.16°`, and physical sun (178.2° az, 62.6° el) with alpha transparency across all 661 frames.
+- **Plate Composite:** Overlayed directly onto 1080p Google Earth Studio plate `ONSC Clubhouse Roof Hero FOV40.mp4`.
+- **Output:** `sites/onsc-clubhouse/renders/onsc_master_flight_composite.mp4` (14.2 MB, 22 seconds @ 30 fps). Zero dissolving, solid 360° architecture, 100% real Badin Lake environment.
+
+### Milestone: Tooling Integration — Tripo 3D & Meshy MCP (2026-09-05)
+- **Tripo 3D Blender Addon:** Cloned `Metatronsdoob369/tripo-3d-for-blender`, submodules updated, symlinked into Blender 4.5/4.2 addons, verified operational. Multi-view (Front/Back/Left/Right) 3D generation and Blender MCP server on `localhost:9876`.
+- **Meshy MCP Server:** Cloned `meshy-dev/meshy-mcp-server`, built, wired to Antigravity (`mcp_config.json`) and Cursor (`~/.cursor/mcp.json`). Exposes 24 tools including `meshy_multi_image_to_3d` with Meshy 7 and 8K textures.
+- **Local Server Staging:** Dedicated local GPU compute server being prepared for local 4K rendering and multi-view generation.
+
+### Milestone: Server Migration Readiness — portability audit (2026-09-05)
+- **Doc:** `docs/SERVER_HANDOFF.md` in the repo — what transfers, what breaks, and how the port proves itself.
+- **LFS is the silent failure mode.** 39+ files are LFS-tracked and there is **no remote**, so `.git/lfs/` must move with the repo. A `git clone` from a bare mirror without the LFS store yields **pointer files, not content** (a `.glb` reading ~130 bytes, a `.jpg` reporting as ASCII text). Install `git-lfs` *before* cloning; after transfer run `git lfs fsck` then `git lfs checkout`. This exact failure occurred during the migration on the iMac.
+- **Seven scripts hardcode `/Users/joewales/...`** and will fail immediately on the server: `generate_trellis_mesh`, `generate_multiview_trellis`, `render_master_composite`, `render_flight_test`, `render_full_flight`, `test_infinisplat`, `inventory`. The verified engine (`gt_build`, `es_verify`, `es_matrices`, `roof_*`, `gen_qa`, `fit_model_to_anchors`, `verify_model_scale`, `verify_yaw_iou`, `sun_from_time`, `matrices_to_trajectory`) takes paths as arguments and is already portable.
+- **Two interpreters, deliberately.** 9 scripts run inside Blender's bundled Python (no PIL, no numpy); 8 need numpy/scipy/PIL. That is why render and measure are separate stages in `verify_model_scale.py` and `verify_yaw_iou.py` — keep the split.
+- **macOS traps that do not follow us:** Homebrew Python 3.14's broken `pyexpat` (kills `gt_build.py`'s KML self-check — everything ran under `/usr/bin/python3` or `conda run -n agents`), and `conda run` swallowing heredoc stdin.
+- **Port verification — three cheap commands with known-good numbers** (full detail in the handoff): `es_matrices.py` → 661 frames, forward-axis **0.027°**, position diff **0.531 m**; `roof_check.py` on roof_v1 → 81 facets, 132 edges, **PASS**; `fit_model_to_anchors.py` on v2 → 189,283 verts, axis **+4.03°**, scale **61.664**, yaw **−23.16°**, aspect 0.5522 vs 0.7058 → **FAIL on aspect, which is correct** (the open depth deficit, not a port problem).
+- **Not in the repo:** the 516 MB Earth Studio footage (`~/NOdrone/Google Earth Studio/…/footage/`) and the macOS Photos library originals. The four `refs/hi_*.jpg` full-res copies are already in LFS. `renders/` is 923 MB, gitignored and regenerable — do not rsync it blindly.
+- **What the GPU unlocks:** local TRELLIS/multi-view instead of the HF Space round-trip (open target: aspect **0.7058**, needing **1.278×** more cross-axis depth, bracketed by `hi_686B857C` v=−24 m and `onsc_oblique_from_NE` v=+20 m); 3DGS/InfiniSplat at opposing baselines; and Cycles at scale (the 661-frame material pass used EEVEE because Cycles was ~14.5 s/frame on this CPU).
+- **Standing rule:** resolve orientation flips on an **oblique** frame, never the nadir — at f600 the plan is near-symmetric so the 180° ambiguity separates by only 0.509 vs 0.499; at f285 it separates properly, 0.494 vs 0.454.

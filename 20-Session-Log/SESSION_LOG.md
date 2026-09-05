@@ -4,6 +4,31 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
+## 2026-09-05 — ONSC 3D Drone Pipeline: Silhouette IoU Gate, InfiniSplat 3DGS, Master Composite Flight & Tooling (Tripo / Meshy)
+
+- **Mathematical Calibration & Gate:**
+  - Yaw sign error corrected ($\psi = (90 - B) - \theta$) in commit `144bf58`. For v2: scale 61.664, yaw −23.16°.
+  - Discovered 180° ambiguity is near-degenerate at nadir frame 600 (0.509 vs 0.499), but decisively separated on oblique frame 285 (0.494 vs 0.454). Rule established: resolve orientation flips on oblique frames, never on nadir.
+  - Tested 1D anisotropic cross-axis expansion (1.278×) against surveyed 0.7058 aspect ratio: proved linear stretching inflates union by warping bilateral masses into ovals without raising IoU. True multi-view reconstruction is mathematically required to place the 8 distinct roof masses.
+- **3D Gaussian Splatting (InfiniSplat):**
+  - Reconstructed 1,483,945 3D Gaussians (`onsc_scene.ply`, 79 MB) from `real_hero_weatheredwood.jpg` via `PLUS-WAVE/InfiniSplat` in 6s. Exported self-contained WebGL viewer `standalone.html` (21 MB).
+  - Built custom Blender EEVEE Geometry Nodes point-rasterization pipeline reading SH0 color attributes (`f_dc_0, 1, 2`). Rendered and encoded smooth 30 fps drone sweep video `onsc_infinisplat_flight.mp4`.
+  - Visual proof of single-view limit: dissolving/hollow interior when camera orbits behind the visible frustum confirms necessity of opposing view coverage.
+- **Master 360° Composite Flight:**
+  - Rendered all 661 frames (1920x1080 @ 30 fps, 22 seconds) of geometrically verified solid clubhouse (`v2.glb`) with calibrated high-noon physical sun (azimuth 178.2°, elevation 62.6°) and transparent film.
+  - Composited over the verified 661-frame Google Earth Studio plate (`ONSC Clubhouse Roof Hero FOV40.mp4`). Output: `onsc_master_flight_composite.mp4` (14.2 MB). Result: 100% solid, non-dissolving 360° architecture (porte-cochère, cupola, gables, veranda) seated on the real Badin Lake, pine forest, and golf course terrain.
+- **Tooling Stood Up:**
+  - **Tripo 3D Blender Addon** (`Metatronsdoob369/tripo-3d-for-blender`): cloned to `/Users/joewales/Projects/tripo-3d-for-blender`, submodules checked out via HTTPS, symlinked into Blender 4.5/4.2 `scripts/addons/tripo_3d`. Verified active; exposes multiview-to-3D (Front/Back/Left/Right) and Blender MCP socket server (`localhost:9876`).
+  - **Meshy MCP Server** (`meshy-dev/meshy-mcp-server`): cloned to `/Users/joewales/Projects/meshy-mcp-server`, built to `dist/index.js`, wired into Antigravity IDE (`mcp_config.json`) and Cursor (`~/.cursor/mcp.json`). Exposes 24 tools including `meshy_multi_image_to_3d` (Meshy 7, 8K textures, smart topology).
+- **Next Stage:** Dedicated local GPU compute server being racked for unconstrained local 4K rendering and multi-view generation.
+
+## 2026-09-03 — Voice instance stood up (not TEN)
+
+- Joe: TEN is a runtime with a harness, not the instance. Asked for the Grok local cascade.
+- New repo `/Users/joewales/voice-instance`: Silero ONNX VAD → 500 ms turn → faster-whisper base → grok-4-fast-non-reasoning → Kokoro ONNX. One process. xAI key read from env or `~/.hermes/.env`, never copied.
+- Intel iMac: no current onnxruntime/torch wheels for x86_64. Pinned onnxruntime 1.23.2, dropped torch.
+- Tests 10/10. Talk: `uv run voice-instance fetch-models` then `uv run voice-instance talk`.
+
 ## 2026-09-01 — Astro lander touch-up + Hermes OpenRouter 401 + default → Grok
 
 - Cosine Astro lander (`/Users/joewales/domain-recovery/Astro_Build`): charcoal spatial-glass restyle. Joe liked the reimagining, not a scrape. Agent over-rebuilt the opener; Joe: rewind original chip/scale, SYSTEMS thinner + gradient, whole piece on one glass card. Topology under the site (mouse lag). Presence ignition, not scroll. Unread ticker/labels gone. **Not pushed** — GH Pages still the old cut. Pick up in the dashboard.

@@ -4,7 +4,23 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 
 ---
 
-## 2026-09-05 — ONSC 3D Drone Pipeline: Silhouette IoU Gate, InfiniSplat 3DGS, Master Composite Flight & Tooling (Tripo / Meshy)
+## 2026-09-05 — Dell Precision 5820 GPU Render Bench Commissioning: Path A (WSL2 + Windows Native OptiX + Headless Automation)
+
+- **Hardware & Architecture Stood Up (Host 5820 / 192.168.0.18):**
+  - OS verified: Windows 10 Pro for Workstations Build 26200 / 25H2 (modern 26xxx hypervisor kernel, non-EOL).
+  - CPU: Intel Xeon W-2145 (8C/16T @ 3.70 GHz), RAM: 128 GB Quad-Channel ECC DDR4 (51.7 GB/s bandwidth).
+  - Storage split: Disk 0 (1.55 TB NVMe SSD) for OS, WSL2 ext4, and hot databases/repos; Disk 1 (3.64 TB WD Black HDD) mounted as `E:\Lab\` (`00-inbox` through `90-cache`). `C:\UE5_DDC` configured for Unreal Engine Derived Data Cache.
+  - Headless automation: `AutoAdminLogon = 1` set in registry — boots directly without physical monitor or keyboard.
+  - Hypervisor enabled via `bcdedit /set hypervisorlaunchtype auto` and DISM `VirtualMachinePlatform`.
+- **WSL2 Ubuntu 24.04 LTS & Lab Platform:**
+  - Default user `themachinist` created and granted ownership of `/srv/{repos,stacks,work}`.
+  - NVIDIA paravirtualization verified: `nvidia-smi` inside WSL2 exposes RTX 3070 with Driver 591.86 and CUDA 13.1.
+  - Native Linux `git-lfs` 3.4.1 installed.
+  - `flyover` repository (1.4 GB) synced to `/srv/repos/flyover` and `C:\Projects\flyover` on NVMe. All Git LFS objects passed integrity check (`git lfs fsck OK`). Port verification commands (`es_matrices.py` 0.027° / 0.531 m; `roof_check.py` 81 facets PASS) reproduced with 100% precision.
+- **First GPU Render Fired on THE BENCH:**
+  - Rendered `sites/onsc-clubhouse/models/infinisplat/onsc_scene.ply` (1,483,945 3D Gaussians) via Blender 4.5 LTS on NVIDIA GeForce RTX 3070 (OptiX / EEVEE Next).
+  - High-res frame `scratch/bench_splat_test.png` (1536x1152, 2.3 MB) rendered in 23.7s with Spherical Harmonics SH0 color rasterization. Fetched to Mac artifacts and verified visually.
+
 
 - **Mathematical Calibration & Gate:**
   - Yaw sign error corrected ($\psi = (90 - B) - \theta$) in commit `144bf58`. For v2: scale 61.664, yaw −23.16°.

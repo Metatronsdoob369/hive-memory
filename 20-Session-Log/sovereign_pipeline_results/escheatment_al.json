@@ -1,0 +1,212 @@
+{
+  "cik": 92122,
+  "entity": "SOUTHERN CO",
+  "target_state": "AL",
+  "total_unfiltered_events": 7,
+  "reconciled_unique_events": 7,
+  "events": [
+    {
+      "event_class": "merger_completion",
+      "event_date": "2026-05-13",
+      "accession": "0000092122-26-000028",
+      "primary_document": "so-20260402.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2029-05-13",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2029-05-13",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2029-05-13",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2025-05-21",
+      "accession": "0000092122-25-000036",
+      "primary_document": "so-20250410.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2028-05-21",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2028-05-21",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2028-05-21",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2024-05-22",
+      "accession": "0001308179-24-000515",
+      "primary_document": "so4274141-def14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2027-05-22",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2027-05-22",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2027-05-22",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2023-04-14",
+      "accession": "0001308179-23-000671",
+      "primary_document": "so4109301-def14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2026-04-14",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2026-04-14",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2026-04-14",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2022-12-12",
+      "accession": "0000092122-22-000071",
+      "primary_document": "so-20221212.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2025-12-12",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2022-05-25",
+      "accession": "0001206774-22-001105",
+      "primary_document": "so3978871_def14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2025-05-25",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2025-05-25",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2025-05-25",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2021-05-26",
+      "accession": "0001206774-21-001083",
+      "primary_document": "so3828771-def14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "AL",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2024-05-26",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC13",
+          "dormancy_years": 3,
+          "expiry_date": "2024-05-26",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "AL",
+          "code": "SC54",
+          "dormancy_years": 3,
+          "expiry_date": "2024-05-26",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "AL"
+    }
+  ]
+}

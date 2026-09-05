@@ -18,8 +18,9 @@
 
 ## Open decisions (Joe)
 
-- [[Open - Renderer route]] — Higgsfield v2v vs image-to-3D+Blender vs full 3DGS. (HeliosGen runs locally as the Higgsfield alternative.) The shingle product names **route 2 (geometric) as the product path** — deterministic per SKU across all 661 frames; generative stays the fast mood-piece lane.
+- ~~[[Open - Renderer route]] — Higgsfield v2v vs image-to-3D+Blender vs full 3DGS~~ — **decided 2026-09-05 (later session): UE5 + Twinmotion Content-for-UE plugin**, not the external Twinmotion app, no OS-level UI automation; deliverable is rendered 4K/60fps video only, not an editable `.tm` project. See [[Joint Pipeline Decision]] — **but that same doc's stated priority order puts this behind gate-chain fixes (done) and the photo re-shoot (still open)**, so it's the next renderer to build, not a green light to ship.
 - [[Open - Pacing 22 s vs 44 s]] — decide after first preview.
+- **New:** whether to stand up a live Unreal/Blender MCP bridge for this session vs. keep driving UE5/Blender headlessly via `UnrealEditor-Cmd`/`blender -b` scripts (as done throughout) — see [[Server MCP Environment Audit]]. Note the 2026-09-05 Tripo milestone below claims a Blender MCP server on `localhost:9876` from an earlier session; a port scan on the 5820 later the same day found nothing listening there — reconcile before relying on it.
 
 ## Missing inputs
 

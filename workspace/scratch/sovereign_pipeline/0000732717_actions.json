@@ -1,0 +1,85 @@
+{
+  "cik": 732717,
+  "name": "AT&T INC.",
+  "state_of_incorporation": "DE",
+  "tickers": [
+    "T",
+    "TBB",
+    "T-PA",
+    "T-PC"
+  ],
+  "lineage_history": [
+    {
+      "former_name": null,
+      "changed_to": "AT&T INC.",
+      "change_date": "1995-05-26"
+    },
+    {
+      "former_name": null,
+      "changed_to": "AT&T INC.",
+      "change_date": "1994-06-24"
+    }
+  ],
+  "events": [
+    {
+      "form": "8-K",
+      "event_date": "2026-05-14",
+      "filing_date": "2026-05-20",
+      "items": "5.02,5.03,5.07,9.01",
+      "accession_number": "0001193125-26-232817",
+      "primary_document": "d227921d8k.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    },
+    {
+      "form": "DEF 14A",
+      "event_date": "2026-05-14",
+      "filing_date": "2026-03-23",
+      "items": "Merger/Proxy",
+      "accession_number": "0001193125-26-119888",
+      "primary_document": "d919223ddef14a.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    },
+    {
+      "form": "DEF 14A",
+      "event_date": "2025-05-15",
+      "filing_date": "2025-04-04",
+      "items": "Merger/Proxy",
+      "accession_number": "0001193125-25-073402",
+      "primary_document": "d900144ddef14a.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    },
+    {
+      "form": "DEF 14A",
+      "event_date": "2024-05-16",
+      "filing_date": "2024-04-04",
+      "items": "Merger/Proxy",
+      "accession_number": "0001193125-24-087253",
+      "primary_document": "d502707ddef14a.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    },
+    {
+      "form": "DEF 14A",
+      "event_date": "2023-04-03",
+      "filing_date": "2023-04-03",
+      "items": "Merger/Proxy",
+      "accession_number": "0001193125-23-089578",
+      "primary_document": "d393251ddef14a.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    },
+    {
+      "form": "8-K",
+      "event_date": "2023-01-27",
+      "filing_date": "2023-02-02",
+      "items": "5.02,5.03,9.01",
+      "accession_number": "0001193125-23-022845",
+      "primary_document": "d457902d8k.htm",
+      "cusip": null,
+      "reverse_split_ratio": null
+    }
+  ]
+}

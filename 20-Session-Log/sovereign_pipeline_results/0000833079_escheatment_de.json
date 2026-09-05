@@ -1,0 +1,830 @@
+{
+  "cik": 833079,
+  "entity": "Meritage Homes CORP",
+  "target_state": "DE",
+  "total_unfiltered_events": 31,
+  "reconciled_unique_events": 31,
+  "events": [
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2026-08-20",
+      "accession": "0000833079-26-000130",
+      "primary_document": "mth-20260820.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2029-08-20",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2025-12-31",
+      "accession": "0000833079-26-000098",
+      "primary_document": "mth-20260406.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2028-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2030-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2030-12-31",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2025-05-22",
+      "accession": "0000833079-25-000102",
+      "primary_document": "mth-20250522.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2028-05-22",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2024-12-31",
+      "accession": "0000833079-25-000081",
+      "primary_document": "mth-20250407.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2027-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2029-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2029-12-31",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2023-12-31",
+      "accession": "0000833079-24-000071",
+      "primary_document": "mth-20240328.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2026-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2028-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2028-12-31",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2023-06-14",
+      "accession": "0000833079-23-000115",
+      "primary_document": "mth-20230614.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2026-06-14",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2023-05-18",
+      "accession": "0000833079-23-000109",
+      "primary_document": "mth-20230518.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2026-05-18",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2023-03-24",
+      "accession": "0000833079-23-000083",
+      "primary_document": "mth-20230323.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2026-03-24",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2028-03-24",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2028-03-24",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2022-08-11",
+      "accession": "0000833079-22-000079",
+      "primary_document": "mth-20220811.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2025-08-11",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2021-12-31",
+      "accession": "0000833079-22-000064",
+      "primary_document": "meritagehomesproxy2022.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2024-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2026-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2026-12-31",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2021-11-17",
+      "accession": "0000833079-21-000144",
+      "primary_document": "mth-20211117.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2024-11-17",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2020-12-31",
+      "accession": "0000833079-21-000076",
+      "primary_document": "meritagehomesproxy2021.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2023-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2025-12-31",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2025-12-31",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2021-02-17",
+      "accession": "0000833079-21-000045",
+      "primary_document": "mth-20210217.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2024-02-17",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2020-05-21",
+      "accession": "0000833079-20-000066",
+      "primary_document": "meritagehomesproxy2020.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2023-05-21",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2025-05-21",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2025-05-21",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2019-05-17",
+      "accession": "0000833079-19-000062",
+      "primary_document": "meritagehomesproxy2019.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2022-05-17",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2024-05-17",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2024-05-17",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2018-03-27",
+      "accession": "0001193125-18-097817",
+      "primary_document": "d506646ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2021-03-27",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2023-03-27",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2023-03-27",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2018-05-17",
+      "accession": "0000833079-18-000058",
+      "primary_document": "meritagehomesproxy2018.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2021-05-17",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2023-05-17",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2023-05-17",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2017-08-03",
+      "accession": "0001193125-17-247575",
+      "primary_document": "d415739ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2020-08-03",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2022-08-03",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2022-08-03",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2017-05-10",
+      "accession": "0001193125-17-165723",
+      "primary_document": "d388743d8k.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2020-05-10",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2017-05-19",
+      "accession": "0000833079-17-000046",
+      "primary_document": "meritagehomesproxy2017.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2020-05-19",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2022-05-19",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2022-05-19",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2017-02-15",
+      "accession": "0000833079-17-000028",
+      "primary_document": "amendedbylaws.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2020-02-15",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2016-05-19",
+      "accession": "0000833079-16-000159",
+      "primary_document": "meritagehomesproxy2016.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2019-05-19",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2021-05-19",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2021-05-19",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2015-06-24",
+      "accession": "0001193125-15-233465",
+      "primary_document": "d944146ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2018-06-24",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2020-06-24",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2020-06-24",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2015-05-13",
+      "accession": "0000833079-15-000053",
+      "primary_document": "meritagehomesproxy2015.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2018-05-13",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2020-05-13",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2020-05-13",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "charter_amendment",
+      "event_date": "2014-11-24",
+      "accession": "0000833079-14-000122",
+      "primary_document": "a8k-amendedandrestatedbyla.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2017-11-24",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2014-05-14",
+      "accession": "0001193125-14-114023",
+      "primary_document": "d680825ddef14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2017-05-14",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2019-05-14",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2019-05-14",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2013-12-09",
+      "accession": "0001193125-13-466928",
+      "primary_document": "d637303ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2016-12-09",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2018-12-09",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2018-12-09",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2013-05-15",
+      "accession": "0000833079-13-000064",
+      "primary_document": "proxy-2013.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2016-05-15",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2018-05-15",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2018-05-15",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2013-03-22",
+      "accession": "0001193125-13-122211",
+      "primary_document": "d497746ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2016-03-22",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2018-03-22",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2018-03-22",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2012-05-11",
+      "accession": "0001193125-12-227676",
+      "primary_document": "d345854ds4.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2015-05-11",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2017-05-11",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2017-05-11",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    },
+    {
+      "event_class": "merger_completion",
+      "event_date": "2012-05-25",
+      "accession": "0001193125-12-147733",
+      "primary_document": "d321489ddef14a.htm",
+      "cusip": null,
+      "projections": [
+        {
+          "state": "DE",
+          "code": "SC10",
+          "dormancy_years": 3,
+          "expiry_date": "2015-05-25",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC13",
+          "dormancy_years": 5,
+          "expiry_date": "2017-05-25",
+          "report_due_date": "Check State Booklet"
+        },
+        {
+          "state": "DE",
+          "code": "SC54",
+          "dormancy_years": 5,
+          "expiry_date": "2017-05-25",
+          "report_due_date": "Check State Booklet"
+        }
+      ],
+      "projection_state": "DE"
+    }
+  ]
+}

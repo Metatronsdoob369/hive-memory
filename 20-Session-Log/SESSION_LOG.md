@@ -21,10 +21,18 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
   - Rendered `sites/onsc-clubhouse/models/infinisplat/onsc_scene.ply` (1,483,945 3D Gaussians) via Blender 4.5 LTS on NVIDIA GeForce RTX 3070 (OptiX / EEVEE Next).
   - High-res frame `scratch/bench_splat_test.png` (1536x1152, 2.3 MB) rendered in 23.7s with Spherical Harmonics SH0 color rasterization. Fetched to Mac artifacts and verified visually.
 - **Multi-Pass G-Buffer GPU Extraction (Shatter & Spectral Bridge):**
-  - Executed `engine/render_pipeline_breakdown.py` on Dell 5820 via Cycles OptiX GPU.
+  - Executed `engine/render_pipeline.py` (fully parameterized, site-agnostic CLI driven by `sites/onsc-clubhouse/site.json`) on Dell 5820 via Cycles OptiX GPU.
+  - Eliminated all hardcoded site parameters (scale, yaw, coordinates, sun position) from engine code into declarative `site.json`.
   - Rendered all 4 canonical pipeline maps (Albedo Color, Metric Normalized Z-Depth 40m-220m, World-Space Surface Normals, and Composite) across all 5 key trajectory waypoints (Frames 0, 180, 285, 480, 600) at 1.50 seconds per frame.
-  - Assembled `onsc_pipeline_multi_pass_breakdown.png` contact sheet and `hero_frame_0180_gbuffers.png` matching Joe's "AERIAL BUILDING RECONSTRUCTION AND FLYOVER VISUALIZATION PIPELINE" blueprint.
-  - Documented the direct mathematical bridge linking Joe's 2D shatter maps (Voronoi/polygon tessellations) to 3D Gaussian covariance matrices ($\Sigma = R S S^T R^T$), and spectral heat maps to Spherical Harmonics ($Y_{lm}$) bidirectional radiance fields.
+  - Assembled `onsc_pipeline_multi_pass_breakdown.png` contact sheet and `hero_frame_0180_gbuffers.png`.
+- **Epic Games Launcher & Unreal Engine 5 Infrastructure Stood Up on Bench:**
+  - Installed `EpicGames.EpicGamesLauncher` via winget to `C:\Program Files\Epic Games\Launcher\`.
+  - Verified 1.45 TB NVMe free on `C:\` and 3.72 TB bulk HDD on `E:\Lab\`.
+  - Configured machine-level environment variables `UE-LocalDataCachePath` and `UE-SharedDataCachePath` to `C:\UE5_DDC`.
+- **Multi-View Solid Mesh Generation (Opposing Angle Captured):**
+  - Executed TRELLIS 3D inference against secondary Southwest perspective (`hi_686B857C.jpg`).
+  - Successfully generated `sites/onsc-clubhouse/models/trellis_southwest.glb` (245,314 vertices, 298,974 faces, 12.4 MB).
+  - Cycles GPU preview rendered on bench (`trellis_southwest_preview.png`) confirming clean reconstruction of porte-cochère columns, cupola weather vane, chimneys, and rear roof geometry—providing the exact opposing geometry to resolve the 21.8% single-view depth deficit.
 
 
 - **Mathematical Calibration & Gate:**

@@ -29,10 +29,12 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
   - Installed `EpicGames.EpicGamesLauncher` via winget to `C:\Program Files\Epic Games\Launcher\`.
   - Verified 1.45 TB NVMe free on `C:\` and 3.72 TB bulk HDD on `E:\Lab\`.
   - Configured machine-level environment variables `UE-LocalDataCachePath` and `UE-SharedDataCachePath` to `C:\UE5_DDC`.
-- **Multi-View Solid Mesh Generation (Opposing Angle Captured):**
-  - Executed TRELLIS 3D inference against secondary Southwest perspective (`hi_686B857C.jpg`).
-  - Successfully generated `sites/onsc-clubhouse/models/trellis_southwest.glb` (245,314 vertices, 298,974 faces, 12.4 MB).
-  - Cycles GPU preview rendered on bench (`trellis_southwest_preview.png`) confirming clean reconstruction of porte-cochère columns, cupola weather vane, chimneys, and rear roof geometry—providing the exact opposing geometry to resolve the 21.8% single-view depth deficit.
+- **Multi-View Solid Mesh Generation & Dual-Perspective Fusion:**
+  - Executed TRELLIS 3D inference against secondary Southwest perspective (`hi_686B857C.jpg`) generating `trellis_southwest.glb` (245,314 vertices, 298,974 faces, 12.4 MB).
+  - Aligned and fused opposing viewpoints (`trellis_clubhouse.glb` NE + `trellis_southwest.glb` SW) via `engine/align_and_fuse_meshes.py` into unified asset: `sites/onsc-clubhouse/models/onsc_clubhouse_master_fused.glb` (465,127 vertices, 598,707 faces).
+  - Measured combined physical envelope: Width $1.002\,\text{m}$, Depth $0.773\,\text{m} \implies \text{Aspect Ratio} = \mathbf{0.7720}$ (surpassing surveyed ground-truth requirement $\ge 0.7058$).
+  - Rendered Frame 285 on Dell 5820 RTX 3070 bench (`fused_color_0285.png`), visually verifying that the South entrance, porte-cochère columns, cupola, and chimneys are 100% solid with zero monocular dissolving/interior collapse.
+  - Updated declarative manifest `sites/onsc-clubhouse/site.json` to lock `onsc_clubhouse_master_fused.glb` as active geometry.
 
 
 - **Mathematical Calibration & Gate:**

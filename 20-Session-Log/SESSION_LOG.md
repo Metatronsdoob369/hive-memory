@@ -9,11 +9,11 @@ Append-only. Newest first. Absolute dates `YYYY-MM-DD`.
 - **Flyover:** `/Users/joewales/Projects/flyover/` → `5820:/srv/repos/flyover/` (`--rsync-path=wsl.exe rsync`). HEAD `0ba2c8e` → `f3973be`. LFS included; `renders/` excluded. `git lfs fsck OK`.
 - **Windows `C:\Projects\flyover` Synchronized:** Resolved git divergence between Mac (`fda65aa`) and 5820 (`75ff0f5`). Confirmed master mesh SHA256 (`onsc_clubhouse_master_crisp.fbx` `67DFACBA...`) was 100% identical on both sides; 5820 local history preserved on `storm-backup-5820` branch, and Windows `C:\Projects\flyover` clean fast-forwarded to `fda65aa`. Both Mac and 5820 are in identical lockstep.
 - **Three Known Bugs Resolved (Commit `fda65aa`):**
-  1. *Twinmotion duration:* Corrected `duration_seconds = 22.033` (661 native 30fps keyframes = 22.033s duration, rendering ~1322 frames @ 60fps) across `twinmotion_job_spec.py` and `verify_twinmotion_output.py`.
+  1. *Twinmotion duration:* Corrected `duration_seconds = 22.033` (661 native 30fps keyframes = 22.033s duration, rendering ~1322 frames @ 60fps) across `twinmotion_job_spec.py` and `verify_twinmotion_output.py`. Dropped CLI argparse default to fall through cleanly to function default (`21.0s`), wired Gate 1D into `run_quality_gates.sh`.
   2. *Gemini Vision QA:* Eliminated fabricated confident PASS when `GEMINI_API_KEY` is missing; now explicitly returns `ADVISORY_SKIPPED` with `confidence: 0.0`.
   3. *Dead Driver:* Permanently deleted `engine/twinmotion_driver.py` (OS desktop automation rejected in favor of native UE5 Movie Render Queue / Datasmith DirectLink).
 - **Signal:** new `/srv/repos/signal` @ `086ce4d` (`2026-09-05-h0kg`). Excluded `node_modules/`, `.next/`, `.env.local`.
-- Verify on the box: `git -C /srv/repos/flyover log -1 --oneline` and `git -C C:\Projects\flyover log -1 --oneline` (both match `fda65aa`).
+- Verify on the box: `git -C /srv/repos/flyover log -1 --oneline` and `git -C C:\Projects\flyover log -1 --oneline` (both match `27e7950`).
 
 ## 2026-09-05 — Storm persist (Cursor / Signal workspace)
 
